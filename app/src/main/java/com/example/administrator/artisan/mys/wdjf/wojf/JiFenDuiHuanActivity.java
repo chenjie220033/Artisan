@@ -135,7 +135,7 @@ public class JiFenDuiHuanActivity extends AppCompatActivity {
                 holder.txt = (TextView) convertView.findViewById(R.id.shouhuo_dizhi_xgdz);
                 holder.checkBox = (SmoothCheckBox) convertView
                         .findViewById(R.id.shouhuo_dizhi_box);
-                convertView.setTag(holder);
+                convertView.setTag(holder );
             } else {
                 holder = (ViewHolder) convertView.getTag();
             }
