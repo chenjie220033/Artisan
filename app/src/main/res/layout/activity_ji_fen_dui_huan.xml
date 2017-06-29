@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.artisan.mys.wdjf.wojf.JiFenDuiHuanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/jifen_duihuan_fh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/my_jifenshangcheng_fh"
+                android:layout_width="@dimen/size_45dp"
+                android:layout_height="@dimen/size_45dp"
+                android:padding="@dimen/size_6dp"
+                android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="积分兑换"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_gouwu_shangpintupian"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_180dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/gouwu_meidi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="花生油5L"
+                    android:textColor="@color/text_colcr"
+                    android:textSize="@dimen/size_16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="100积分"
+                    android:textColor="@color/zhutise"
+                    android:textSize="@dimen/size_14dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:padding="@dimen/size_10dp"
+                android:text="请选择收货地址"
+                android:textColor="@color/text_fu_colcr"
+                android:textSize="@dimen/size_14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <ListView
+                android:layout_centerInParent="true"
+                android:id="@+id/jifen_duihuan_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/size_10dp"
+                    android:text="使用新地址"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="添加新地址"
+                    android:textColor="@color/zhutise"
+                    android:textSize="@dimen/size_14dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <Button
+                android:id="@+id/jifen_duihuan_qrdh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_50dp"
+                android:background="@drawable/button_shape"
+                android:text="确认兑换"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

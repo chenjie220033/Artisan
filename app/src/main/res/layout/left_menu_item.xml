@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/left_menu_item"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:background="@drawable/selector_item_select"
+              android:clickable="true"
+              android:gravity="center"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/left_menu_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="菜单"
+        android:textSize="@dimen/size_16dp"/>
+</LinearLayout>

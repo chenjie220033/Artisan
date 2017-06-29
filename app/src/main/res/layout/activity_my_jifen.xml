@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBai"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/my_jifenduihuan_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:id="@+id/toolbar_city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="@string/myjifenshangpin"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_16dp" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/jifenduihuan_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi" />
+</LinearLayout>

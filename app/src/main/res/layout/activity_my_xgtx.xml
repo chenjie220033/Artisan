@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_xgtx"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.artisan.mys.myyhxx.MyXGTXActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@color/zhutise">
+
+        <ImageView
+            android:id="@+id/my_yonghuxx_xgtx_fh"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="账户信息"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+<com.zhy.android.percent.support.PercentLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_heightPercent="10%h">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_20dp"
+        android:text="头像"
+        android:textColor="@color/text_colcr"
+        android:textSize="@dimen/size_16sp" />
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/size_10dp"
+        app:layout_heightPercent="80%h"
+        app:layout_widthPercent="80%h"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+</com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<TextView
+    android:id="@+id/my_xgtx_beijingyanse"
+    android:background="@color/text_colcr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/my_xgtx_xz"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_40dp"
+            android:background="@color/white"
+            android:src="@mipmap/ic_launcher"
+            app:layout_heightPercent="20%h"
+            app:layout_widthPercent="20%h" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_xgtx_xz"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_10dp"
+                    android:text="从手机相册中选择"
+                    android:textColor="@color/zhutise"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10dp"
+
+                    android:layout_weight="1"
+                    android:padding="@dimen/size_10dp"
+                    android:text="上传头像"
+                    android:textColor="@color/zhutise"
+                    android:textSize="@dimen/size_18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:padding="@dimen/size_10dp"
+                    android:text="关闭"
+                    android:textColor="@color/zhutise"
+                    android:textSize="@dimen/size_18sp" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@color/zhutise"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.artisan.mores.tieba.gouwu.HuoDongXiangQingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@color/zhutise">
+
+        <ImageView
+            android:id="@+id/huodong_xiangqing_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="活动详情"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_16dp" />
+
+        <ImageView
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:src="@drawable/icn16" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_15dp"
+                android:background="@color/fengexiancu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_100dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/size_90dp"
+                    android:layout_height="@dimen/size_80dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/thumb_5624840c310d8" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/size_5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_10dp"
+                        android:text="[约看电影]"
+                        android:textColor="@color/text_colcr"
+                        android:textSize="@dimen/size_16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="时间："
+                            android:textColor="@color/hint"
+                            android:textSize="@dimen/size_10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="2017年05月02日 07：00"
+                            android:textColor="@color/hint"
+                            android:textSize="@dimen/size_10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="地点："
+                            android:textColor="@color/hint"
+                            android:textSize="@dimen/size_10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="泽州路01111号"
+                            android:textColor="@color/hint"
+                            android:textSize="@dimen/size_10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/huodong_xiangqing_bmcj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/button_shape"
+                    android:gravity="center"
+                    android:longClickable="true"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:paddingRight="@dimen/size_10dp"
+                    android:paddingBottom="@dimen/size_5dp"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="报名参加"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_15dp"
+                android:background="@color/fengexiancu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_10dp"
+                android:text="活动地点及时间"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:text="地址：泽州路222号"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:text="时间：2017-05-02 07：00-18：00"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_12dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_15dp"
+                android:background="@color/fengexiancu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_10dp"
+                android:text="活动简介"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:text="1.活动结束后电话通知中奖客户，打2次未接来电视为弃权。"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:text="2.活动开始前发送短信通知客户，请勿私自联系商家。"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:text="1.活动结束后电话通知中奖客户，打2次未接来电视为弃权。"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:text="2.活动开始前发送短信通知客户，请勿私自联系商家。"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_12dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_15dp"
+                android:background="@color/fengexiancu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_10dp"
+                android:text="活动详情"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="啊沙发沙发沙发沙发沙发沙asfasfasfasfasfasfasfasfasf发沙发沙发沙发沙发沙发"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_12dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

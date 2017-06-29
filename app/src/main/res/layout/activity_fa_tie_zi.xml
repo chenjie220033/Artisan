@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fa_tie_zi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.artisan.mores.tieba.FaTieZiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/my_mores_tieba_ftz_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="发帖子"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_16dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15dp"
+        android:background="@color/fengexiancu" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="请输入标题"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp"
+        android:textColor="@color/text_colcr"
+        android:textColorHint="@color/hint"
+        android:textSize="@dimen/size_16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15dp"
+        android:background="@color/fengexiancu" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_150dp"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="有什么分享给大家，说说看......"
+        android:padding="@dimen/size_10dp"
+        android:textColor="@color/text_colcr"
+        android:textColorHint="@color/hint"
+        android:textSize="@dimen/size_14dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fengexiancu"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_10dp">
+
+            <LinearLayout
+                android:longClickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_40dp"
+                android:background="@drawable/button_shape"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/size_5dp"
+                android:paddingLeft="@dimen/size_15dp"
+                android:paddingRight="@dimen/size_15dp"
+                android:paddingTop="@dimen/size_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/size_20dp"
+                    android:layout_height="@dimen/size_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/upload" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/size_5dp"
+                    android:text="上传图片"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_14dp" />
+            </LinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp">
+
+                <GridView
+                    android:id="@+id/imager_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </GridView>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50dp"
+            android:layout_marginLeft="@dimen/size_30dp"
+            android:layout_marginRight="@dimen/size_30dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:background="@drawable/button_shape"
+            android:text="免费发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_18dp" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</LinearLayout>

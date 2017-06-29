@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorBai"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/zhutise">
+
+        <TextView
+            android:id="@+id/my_more_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="江湖酒家"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_16dp" />
+        <ImageView
+            android:id="@+id/nongjiale_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+        <ImageView
+            android:id="@+id/nongjiale_jj_fenxiang"
+            android:padding="@dimen/size_12dp"
+            android:src="@drawable/icn16"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/nongjiale_jj_fenxig"
+            android:padding="@dimen/size_12dp"
+            android:src="@drawable/shoucang"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/nongjiale_jj_fenxiang" />
+    </RelativeLayout>
+    <com.example.administrator.artisan.robshop.PullToZoomScrollViewEx
+        android:id="@+id/scroll_views"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

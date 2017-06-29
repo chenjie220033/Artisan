@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_my_ding_zuo"
+    android:layout_width="match_parent"
+    android:background="@color/colorBai"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mys.mydz.MyDingZuoActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@color/colorPrimary">
+            <ImageView
+                android:id="@+id/my_ding_zuo_fh"
+                android:layout_width="@dimen/size_45dp"
+                android:layout_height="@dimen/size_45dp"
+                android:padding="@dimen/size_6dp"
+                android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:id="@+id/drawer_wodedingcan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="订座订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/my_dz_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_60dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/gray_light"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <View
+            android:layout_width="@dimen/size_0dp"
+            android:longClickable="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:textColor="@drawable/button_textcolor"
+            android:layout_marginTop="@dimen/size_12dp"
+            android:checked="true"
+            android:layout_marginBottom="@dimen/size_12dp"
+            android:id="@+id/my_dzdd_dfk"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textSize="@dimen/size_14dp"
+            android:background="@drawable/buttondianji"
+            android:gravity="center"
+            android:text="待付款" />
+
+        <RadioButton
+            android:textSize="@dimen/size_14dp"
+            android:layout_marginTop="@dimen/size_12dp"
+            android:textColor="@drawable/button_textcolor"
+            android:layout_marginBottom="@dimen/size_12dp"
+            android:id="@+id/my_dzdd_yfk"
+            android:layout_width="@dimen/size_0dp"
+            android:background="@drawable/buttondianji"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已付款" />
+        <RadioButton
+            android:layout_marginTop="@dimen/size_12dp"
+            android:textSize="@dimen/size_14dp"
+            android:textColor="@drawable/button_textcolor"
+            android:layout_marginBottom="@dimen/size_12dp"
+            android:id="@+id/my_dzdd_yxf"
+            android:layout_width="@dimen/size_0dp"
+            android:background="@drawable/buttondianji"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已消费" />
+        <RadioButton
+            android:layout_marginTop="@dimen/size_12dp"
+            android:textSize="@dimen/size_14dp"
+            android:textColor="@drawable/button_textcolor"
+            android:layout_marginBottom="@dimen/size_12dp"
+            android:id="@+id/my_dzdd_ytk"
+            android:layout_width="@dimen/size_0dp"
+            android:background="@drawable/buttondianji"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已退款" />
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/my_dzdd_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.zhy.android.percent.support.PercentLinearLayout>

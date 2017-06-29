@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBai"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/home_zaixiandingzuo_fh"
+                android:layout_width="@dimen/size_45dp"
+                android:layout_height="@dimen/size_45dp"
+                android:padding="@dimen/size_6dp"
+                android:src="@drawable/ic_chevron_left_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_45dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="在线订座"
+                android:textColor="@color/colorBai"
+                android:textSize="@dimen/size_16dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/size_10dp"
+            android:paddingRight="@dimen/size_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/size_20dp"
+                android:textColor="@color/text_fu_colcr"
+                android:text="人数"
+                android:textSize="@dimen/size_16dp" />
+            <EditText
+                android:id="@+id/home_zaixiandingzuo_renshu"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:textColor="@color/text_colcr"
+                android:textColorHint="@color/hint"
+                android:paddingLeft="@dimen/size_5dp"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:background="@color/fengexiancu"
+                android:singleLine="true"
+                android:textSize="@dimen/size_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1px"
+            android:background="@color/fengexianxi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/size_10dp"
+            android:paddingRight="@dimen/size_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_fu_colcr"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/size_20dp"
+                android:text="时间"
+                android:textSize="@dimen/size_16dp" />
+
+            <EditText
+                android:id="@+id/home_zaixiandingzuo_shijian"
+                android:cursorVisible="false"
+                android:textColor="@color/text_colcr"
+                android:textColorHint="@color/hint"
+                android:paddingLeft="@dimen/size_5dp"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:background="@color/fengexiancu"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textSize="@dimen/size_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/fengexianxi" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_15dp"
+            android:background="@color/fengexiancu" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/fengexianxi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/size_10dp">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="@dimen/size_0dp"
+                android:textColor="@color/text_fu_colcr"
+                android:textColorHint="@color/hint"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入您的姓名"
+                android:textSize="@dimen/size_14dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/size_10dp">
+
+                <com.example.administrator.artisan.zhifu.SmoothCheckBox
+                    android:layout_width="@dimen/size_20dp"
+                    android:id="@+id/checkBox_nan"
+                    android:layout_height="@dimen/size_20dp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_14dp"
+                    android:paddingRight="@dimen/size_10dp"
+                    android:paddingLeft="@dimen/size_4dp"
+                    android:text="先生" />
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingRight="@dimen/size_10dp">-->
+
+                <com.example.administrator.artisan.zhifu.SmoothCheckBox
+                    android:layout_width="@dimen/size_20dp"
+                    android:id="@+id/checkBox_nv"
+                    android:layout_height="@dimen/size_20dp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/size_14dp"
+                    android:textColor="@color/text_fu_colcr"
+                    android:paddingLeft="@dimen/size_4dp"
+                    android:text="女士" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/fengexianxi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/size_10dp">
+
+            <EditText
+
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/text_fu_colcr"
+                android:textColorHint="@color/hint"
+                android:background="@null"
+                android:hint="请输入您的手机号"
+                android:textSize="@dimen/size_14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/fengexianxi" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_15dp"
+            android:background="@color/fengexiancu" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/fengexianxi" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dp"
+            android:background="@null"
+            android:hint="备注：请填写您的需求，我们会尽量安排"
+            android:paddingLeft="@dimen/size_10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_fu_colcr"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/size_14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/fengexianxi" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_15dp"
+            android:background="@color/fengexiancu" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/fengexianxi" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_60dp"
+            android:paddingLeft="@dimen/size_10dp"
+            android:paddingRight="@dimen/size_10dp">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/size_30dp"
+                android:layout_height="@dimen/size_60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/view">
+
+
+                <TextView
+                    android:id="@+id/my_zaixian_dz_dbj"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:background="@drawable/wenzikuang"
+                    android:gravity="center"
+                    android:text="定包间"
+                    android:textColor="@color/zhutise"
+                    android:textSize="@dimen/size_14dp" />
+
+                <com.example.administrator.artisan.zhifu.SmoothCheckBox
+                    android:id="@+id/checkBox_dbj"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/size_20dp"
+                    android:layout_height="@dimen/size_20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/view">
+
+
+                <TextView
+                    android:id="@+id/my_zaixian_dz_ddt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:background="@drawable/wenzikuang"
+                    android:gravity="center"
+                    android:text="定大厅"
+                    android:textColor="@color/zhutise"
+                    android:textSize="@dimen/size_14dp" />
+
+                <com.example.administrator.artisan.zhifu.SmoothCheckBox
+                    android:id="@+id/checkBox_ddt"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/size_20dp"
+                    android:layout_height="@dimen/size_20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <!--<TextView-->
+            <!--android:text="定包厢"-->
+            <!--android:background="@drawable/wenzikuang"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/zhutise"-->
+            <!--android:textSize="@dimen/size_14sp"-->
+            <!--android:paddingRight="@dimen/size_25dp"-->
+            <!--android:paddingLeft="@dimen/size_25dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/size_25dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/view" />-->
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/fengexianxi" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/size_15dp"
+        android:layout_marginLeft="@dimen/size_30dp"
+        android:layout_marginRight="@dimen/size_30dp"
+        android:layout_marginTop="@dimen/size_15dp"
+        android:background="@color/zhutise"
+        android:text="立即预约"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_18dp"
+        android:id="@+id/my_zaixian_dz_yy" />
+    <View
+        android:background="@color/fengexianxi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:layout_above="@+id/my_zaixian_dz_yy"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

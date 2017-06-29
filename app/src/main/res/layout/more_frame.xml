@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBai"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/tianzhuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorAccent">
+
+            <ImageView
+                android:id="@+id/my_more_fh"
+                android:layout_width="@dimen/size_45dp"
+                android:layout_height="@dimen/size_45dp"
+                android:padding="@dimen/size_6dp"
+                android:src="@drawable/ic_chevron_left_black_24dp" />
+
+            <TextView
+                android:id="@+id/my_more_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_5dp"
+                android:text="更多服务"
+                android:textColor="@color/colorBai"
+                android:textSize="@dimen/size_16dp" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dp"
+            android:textColor="@color/text_colcr"
+            android:gravity="center_vertical"
+            android:padding="@dimen/size_10dp"
+            android:text="更多服务"
+            android:textSize="@dimen/size_16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1px"
+            android:background="@color/fengexianxi" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/size_10dp"
+            android:paddingLeft="@dimen/size_10dp"
+            android:paddingRight="@dimen/size_10dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:weightSum="5">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/more_shangjia"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/more_gengduo_1"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:textColor="@color/text_colcr"
+                    android:text="商家服务"
+                    android:textSize="@dimen/size_12dp" />
+
+                <ImageView
+                    android:id="@+id/more_gengduo_1"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/flloc6"
+                    app:layout_heightPercent="60%w"
+                    app:layout_marginPercent="5%w"
+                    app:layout_widthPercent="60%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/more_nongjiale"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/more_gengduo_2"
+                    android:gravity="center"
+                    android:textColor="@color/text_colcr"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="农家乐"
+                    android:textSize="@dimen/size_12dp" />
+
+                <ImageView
+                    android:id="@+id/more_gengduo_2"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/flloc11"
+                    app:layout_heightPercent="60%w"
+                    app:layout_marginPercent="5%w"
+                    app:layout_widthPercent="60%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/more_tieba"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/more_gengduo_3"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:textColor="@color/text_colcr"
+                    android:text="贴吧"
+                    android:textSize="@dimen/size_12dp" />
+
+                <ImageView
+                    android:id="@+id/more_gengduo_3"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/flloc12"
+                    app:layout_heightPercent="60%w"
+                    app:layout_marginPercent="5%w"
+                    app:layout_widthPercent="60%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/more_jifen"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/more_gengduo_4"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:textColor="@color/text_colcr"
+                    android:text="积分商城"
+                    android:textSize="@dimen/size_12dp" />
+
+                <ImageView
+                    android:id="@+id/more_gengduo_4"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/flloc9"
+                    app:layout_heightPercent="60%w"
+                    app:layout_marginPercent="5%w"
+                    app:layout_widthPercent="60%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/more_youhui"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/more_gengduo_5"
+                    android:gravity="center"
+                    android:textColor="@color/text_colcr"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="优惠券"
+                    android:textSize="@dimen/size_12dp" />
+
+                <ImageView
+                    android:id="@+id/more_gengduo_5"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/flloc5"
+                    app:layout_heightPercent="60%w"
+                    app:layout_marginPercent="5%w"
+                    app:layout_widthPercent="60%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/size_10dp"
+            android:paddingLeft="@dimen/size_10dp"
+            android:paddingRight="@dimen/size_10dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:weightSum="5">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/more_gouwu"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/text_colcr"
+                    android:layout_below="@+id/more_gengduo_6"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="购物"
+                    android:textSize="@dimen/size_12dp" />
+
+                <ImageView
+                    android:id="@+id/more_gengduo_6"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/flloc3"
+                    app:layout_heightPercent="60%w"
+                    app:layout_marginPercent="5%w"
+                    app:layout_widthPercent="60%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/more_jiudian"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/more_gengduo_7"
+                    android:gravity="center"
+                    android:textColor="@color/text_colcr"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="酒店"
+                    android:textSize="@dimen/size_12dp" />
+
+                <ImageView
+                    android:id="@+id/more_gengduo_7"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/flloc1"
+                    app:layout_heightPercent="60%w"
+                    app:layout_marginPercent="5%w"
+                    app:layout_widthPercent="60%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/more_qianggou"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/more_gengduo_8"
+                    android:gravity="center"
+                    android:textColor="@color/text_colcr"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="抢购"
+                    android:textSize="@dimen/size_12dp" />
+
+                <ImageView
+                    android:id="@+id/more_gengduo_8"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/flloc2"
+                    app:layout_heightPercent="60%w"
+                    app:layout_marginPercent="5%w"
+                    app:layout_widthPercent="60%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/more_jiazheng"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/more_gengduo_9"
+                    android:gravity="center"
+                    android:textColor="@color/text_colcr"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="家政"
+                    android:textSize="@dimen/size_12dp" />
+
+                <ImageView
+                    android:id="@+id/more_gengduo_9"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/flloc8"
+                    app:layout_heightPercent="60%w"
+                    app:layout_marginPercent="5%w"
+                    app:layout_widthPercent="60%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/more_dingzuo"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/more_gengduo_10"
+                    android:gravity="center"
+                    android:textColor="@color/text_colcr"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="订座"
+                    android:textSize="@dimen/size_12dp" />
+
+                <ImageView
+                    android:id="@+id/more_gengduo_10"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/flloc4"
+                    app:layout_heightPercent="60%w"
+                    app:layout_marginPercent="5%w"
+                    app:layout_widthPercent="60%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/size_10dp"
+            android:paddingLeft="@dimen/size_10dp"
+            android:paddingRight="@dimen/size_10dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:weightSum="5">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/more_huodong"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/more_gengduo_11"
+                    android:gravity="center"
+                    android:textColor="@color/text_colcr"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="活动"
+                    android:textSize="@dimen/size_12dp" />
+
+                <ImageView
+                    android:id="@+id/more_gengduo_11"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/flloc10"
+                    app:layout_heightPercent="60%w"
+                    app:layout_marginPercent="5%w"
+                    app:layout_widthPercent="60%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/more_shenghuo"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/more_gengduo_12"
+                    android:gravity="center"
+                    android:textColor="@color/text_colcr"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="生活信息"
+                    android:textSize="@dimen/size_12dp" />
+
+                <ImageView
+                    android:id="@+id/more_gengduo_12"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/flloc7"
+                    app:layout_heightPercent="60%w"
+                    app:layout_marginPercent="5%w"
+                    app:layout_widthPercent="60%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1px"
+            android:background="@color/fengexianxi" />
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

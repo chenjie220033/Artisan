@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/toobar1"
+        id="@+id/tab_home"
+        title="首页" />
+    <tab
+        icon="@drawable/toobar2"
+        id="@+id/tab_shoping"
+        title="抢购" />
+    <tab
+        icon="@drawable/toobar3"
+        id="@+id/tab_attention"
+        title="关注"/>
+    <tab
+        icon="@drawable/toobar4"
+        id="@+id/tab_my"
+        title="我的" />
+    <!--<tab-->
+        <!--icon="@drawable/toobar5"-->
+        <!--id="@+id/tab_more"-->
+        <!--title="更多" />-->
+</tabs>
+

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBai"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/my_concern_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <EditText
+            android:id="@+id/sseditText"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/size_8dp"
+            android:background="@drawable/red_editview"
+            android:cursorVisible="false"
+            android:drawableLeft="@drawable/ic_search_white_24dp"
+            android:drawablePadding="@dimen/size_5dp"
+            android:hint="输入商品名/品类/商品"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/size_12dp"
+            app:layout_widthPercent="50%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/titlebar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5555"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_45dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/size_25dp"
+                            android:layout_height="@dimen/size_25dp"
+                            android:onClick="back" />
+
+                        <TextView
+                            android:id="@+id/supplier_list_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:text="全部"
+                            android:textColor="#39ac69"
+                            android:textSize="@dimen/size_12dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/supplier_list_cart_iv"
+                        android:layout_width="@dimen/size_25dp"
+                        android:layout_height="@dimen/size_25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/size_15dp" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_45dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/supplier_list_product"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/supplier_list_product_tv"
+                        android:layout_width="@dimen/size_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="全部分类"
+                        android:textColor="@color/text_colcr"
+                        android:textSize="@dimen/size_12dp" />
+
+                    <ImageView
+                        android:id="@+id/jiantou1"
+                        android:layout_width="@dimen/size_10dp"
+                        android:layout_height="@dimen/size_10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size_3dp"
+                        android:src="@drawable/icon_down" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="@dimen/size_1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/fengexianxi" />
+
+                <LinearLayout
+                    android:id="@+id/supplier_list_sort"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/supplier_list_sort_tv"
+                        android:layout_width="@dimen/size_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="地区"
+                        android:textColor="@color/text_colcr"
+                        android:textSize="@dimen/size_12dp" />
+
+
+                    <ImageView
+                        android:id="@+id/jiantou2"
+                        android:layout_width="@dimen/size_10dp"
+                        android:layout_height="@dimen/size_10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size_3dp"
+                        android:src="@drawable/icon_down" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/size_1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/fengexianxi" />
+
+                <LinearLayout
+                    android:id="@+id/supplier_list_activity"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/supplier_list_activity_tv"
+                        android:layout_width="@dimen/size_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="商圈"
+                        android:textColor="@color/text_colcr"
+                        android:textSize="@dimen/size_12dp" />
+
+
+                    <ImageView
+                        android:id="@+id/jiantou3"
+                        android:layout_width="@dimen/size_10dp"
+                        android:layout_height="@dimen/size_10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size_3dp"
+                        android:src="@drawable/icon_down" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/size_1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/fengexianxi" />
+
+                <LinearLayout
+                    android:id="@+id/supplier_list_activity_jl"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/supplier_list_activity_tvjl"
+                        android:layout_width="@dimen/size_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="离我最近"
+                        android:textColor="@color/text_colcr"
+                        android:textSize="@dimen/size_12dp" />
+
+
+                    <ImageView
+                        android:id="@+id/jiantou4"
+                        android:layout_width="@dimen/size_10dp"
+                        android:layout_height="@dimen/size_10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size_3dp"
+                        android:src="@drawable/icon_down" />
+                </LinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_15dp"
+                android:background="@color/fengexiancu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shoping_shanghu_text"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:text="伊犁路河谷旗舰店"
+                    android:textColor="@color/text_colcr"
+                    android:textSize="@dimen/size_14dp" />
+
+                <TextView
+                    android:textColor="@color/text_colcr"
+                    android:id="@+id/shoping_jvli_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/size_10dp"
+                    android:text="673m"
+                    android:textSize="@dimen/size_12dp" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <include
+                layout="@layout/shoping_frame_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+</com.zhy.android.percent.support.PercentLinearLayout>

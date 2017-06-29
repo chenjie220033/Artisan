@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mineinfobg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/my_titles"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0dp"
+            app:layout_heightPercent="15%"
+            android:gravity="center"
+            android:text="@string/my_titles"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_18dp" />
+
+
+        <View
+            android:id="@+id/my_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0dp"
+            app:layout_heightPercent="3%"
+            android:layout_below="@+id/my_relative_dl" />
+
+        <TextView
+            android:id="@+id/my_black_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/my_view"
+            android:background="@color/heise" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0dp"
+            app:layout_heightPercent="25%"
+            android:layout_below="@+id/my_view"
+            android:orientation="horizontal"
+            android:weightSum="6">
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="@dimen/size_0dp"
+                android:layout_weight="1"
+                android:longClickable="false"
+                android:layout_height="match_parent"/>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="@dimen/size_0dp"
+                android:id="@+id/my_wdye_jifen_text"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/my_wdjf_titles"
+                    android:textColor="@color/my_wdjf_titles"
+                    android:textSize="@dimen/size_14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/size_14dp"
+                    android:gravity="center"
+                    android:text="@string/my_wdjf"
+                    android:textColor="@color/colorBai"
+                    android:id="@+id/textView2" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/my_wdye_yue_text"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/my_wdye_titles"
+                    android:textColor="@color/my_wdjf_title1"
+                    android:textSize="@dimen/size_14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/size_14dp"
+                    android:text="@string/my_wdye"
+                    android:textColor="@color/colorBai" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/my_relative_dl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0dp"
+            app:layout_heightPercent="20%"
+            android:layout_below="@+id/heard_view1"
+            android:layout_centerHorizontal="true">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_0dp"
+                app:layout_heightPercent="50%"
+                android:layout_below="@+id/my_text_dengl"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/my_text_denglsj"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:drawablePadding="@dimen/size_10dp"
+                    android:drawableLeft="@drawable/ic_tablet_mac_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/size_14dp"
+                    android:text="@string/my_denglsj"
+                    android:textColor="@color/colorBai" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:id="@+id/my_text_dengl"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_0dp"
+                app:layout_heightPercent="50%"
+                android:textSize="@dimen/size_14dp"
+                android:gravity="center"
+                android:text="@string/my_dengl"
+                android:textColor="@color/colorBai"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/my_yonghuxingxi_jiantou"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                app:layout_heightPercent="50%"
+                app:layout_widthPercent="50%h"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:src="@drawable/ic_chevron_right_bai_24dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/linearLayout" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/my_image_toux"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="@dimen/size_0dp"
+            app:layout_heightPercent="35%h"
+            app:layout_widthPercent="35%h"
+            android:background="@drawable/log2"
+            android:layout_below="@+id/my_titles"
+            android:layout_centerHorizontal="true" />
+        <View
+            android:id="@+id/heard_view1"
+            android:layout_below="@+id/my_image_toux"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0dp"
+            app:layout_heightPercent="2%h"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>

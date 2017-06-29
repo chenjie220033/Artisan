@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="下载："
+            android:textColor="@color/text_fu_colcr"
+            android:textSize="@dimen/size_14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:gravity="center"
+            android:text="450次"
+            android:textColor="@color/text_fu_colcr"
+            android:textSize="@dimen/size_14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="浏览："
+            android:textColor="@color/hint"
+            android:textSize="@dimen/size_14dp" />
+
+        <TextView
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="5441"
+            android:textColor="@color/hint"
+            android:textSize="@dimen/size_14dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_shape"
+            android:text="立即下载"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi" />
+
+    <LinearLayout
+        android:paddingRight="@dimen/size_20dp"
+        android:paddingLeft="@dimen/size_20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/size_8dp"
+        android:background="@drawable/wenzikuang">
+
+        <ImageView
+            android:padding="@dimen/size_5dp"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_30dp"
+            android:src="@drawable/icn16_hong" />
+
+        <TextView
+            android:text="分享"
+            android:textColor="@color/zhutise"
+            android:textSize="@dimen/size_16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_1px"
+    android:background="@color/fengexianxi"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15dp"
+        android:background="@color/fengexiancu"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <TextView
+        android:textSize="@dimen/size_16dp"
+        android:textColor="@color/text_colcr"
+        android:text="优惠券简介"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <LinearLayout
+        android:padding="@dimen/size_10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+                android:text="节假日通用、提供免费的WIFI、停车位、无需预约，可叠加使用！"
+                android:textSize="@dimen/size_12dp"
+                android:textColor="@color/text_fu_colcr"
+                android:paddingTop="@dimen/size_5dp"
+                android:paddingBottom="@dimen/size_5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <TextView
+            android:text="代金券一份五十元"
+            android:textSize="@dimen/size_12dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:textColor="@color/text_fu_colcr"
+            android:paddingBottom="@dimen/size_5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="除酒水、饮料外全场通用"
+            android:textSize="@dimen/size_12dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:paddingBottom="@dimen/size_5dp"
+            android:textColor="@color/text_fu_colcr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15dp"
+        android:background="@color/fengexiancu"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <TextView
+        android:textSize="@dimen/size_16dp"
+        android:textColor="@color/text_colcr"
+        android:text="美的电器"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp" />
+    <LinearLayout
+        android:padding="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="联系电话：400-15646-54646"
+            android:paddingTop="@dimen/size_5dp"
+            android:textColor="@color/text_fu_colcr"
+            android:textSize="@dimen/size_12dp"
+            android:paddingBottom="@dimen/size_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="公司地址：泽州路阿法狗发送"
+            android:paddingTop="@dimen/size_5dp"
+            android:textColor="@color/text_fu_colcr"
+            android:textSize="@dimen/size_12dp"
+            android:paddingBottom="@dimen/size_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <LinearLayout
+        android:weightSum="7"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp">
+        <View
+            android:layout_weight="0.5"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_weight="2.8"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="@dimen/size_30dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true">
+           <ImageView
+              android:paddingTop="@dimen/size_8dp"
+               android:paddingBottom="@dimen/size_8dp"
+               android:src="@drawable/daozhequ_bai"
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/size_30dp" />
+                <TextView
+                    android:text="到这去"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_weight="0.4"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_weight="2.8"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="@dimen/size_30dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:text="400-4249645414"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15dp"
+        android:background="@color/fengexiancu"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <ImageView
+        android:src="@drawable/home_youhui_xq_tp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="@dimen/size_400dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30dp"/>
+</LinearLayout>

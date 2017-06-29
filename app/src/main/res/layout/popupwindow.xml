@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="绑定手机"
+       android:paddingLeft="@dimen/size_10dp"
+        android:textSize="@dimen/size_16sp"
+        android:textColor="@color/white"
+        android:background="@color/zhutise"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40dp" />
+<TextView
+    android:layout_marginTop="@dimen/size_20dp"
+    android:layout_marginLeft="@dimen/size_10dp"
+    android:layout_width="match_parent"
+    android:padding="@dimen/size_10dp"
+    android:textSize="@dimen/size_16sp"
+    android:textColor="@color/text_colcr"
+    android:gravity="center_vertical"
+    android:text="手机号:"
+    android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_margin="@dimen/size_10dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:background="@drawable/textview_bai_bk"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:maxLength="11"
+        android:numeric="integer"
+        android:textSize="@dimen/size_16sp"
+        android:layout_height="30dp" />
+
+        <Button
+            android:text="获取验证码"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/size_16sp"
+            android:background="@drawable/textview_bk"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:padding="@dimen/size_10dp"
+        android:textColor="@color/text_colcr"
+        android:textSize="@dimen/size_16sp"
+        android:gravity="center_vertical"
+        android:text="验证码:"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_margin="@dimen/size_10dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:background="@drawable/textview_bai_bk"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLength="6"
+            android:numeric="integer"
+            android:textSize="@dimen/size_16sp"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="输入验证码"
+            android:gravity="center"
+            android:textColor="@color/text_colcr"
+            android:textSize="@dimen/size_16sp"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginLeft="@dimen/size_20dp"
+        android:layout_width="wrap_content"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:paddingLeft="@dimen/size_20dp"
+        android:paddingRight="@dimen/size_20dp"
+        android:background="@drawable/textview_bk"
+        android:textColor="@color/text_colcr"
+        android:textSize="@dimen/size_16sp"
+        android:gravity="center_vertical"
+        android:text="立即认证"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"/>
+</LinearLayout>

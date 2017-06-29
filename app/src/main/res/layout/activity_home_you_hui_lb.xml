@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.artisan.Homes.dingzuo.HomeYouHuiLBActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@color/zhutise">
+
+        <ImageView
+            android:id="@+id/home_dingzuo_lb_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="优惠列表"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16dp" />
+
+        <ImageView
+            android:id="@+id/youhui_liebiao_sousuo"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/size_8dp"
+            android:src="@drawable/ic_search_white_24dp" />
+    </RelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/youhui_liebiao_fenlei"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/youhui_liebiao_fenlei_tv"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="全部分类"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_12dp" />
+
+            <ImageView
+                android:id="@+id/jiantou1"
+                android:layout_width="@dimen/size_10dp"
+                android:layout_height="@dimen/size_10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size_3dp"
+                android:src="@drawable/icon_down" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="@dimen/size_1px"
+            android:layout_height="match_parent"
+            android:background="@color/fengexianxi" />
+
+        <LinearLayout
+            android:id="@+id/youhui_liebiao_diqu"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/youhui_liebiao_diqu_tv"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="全部区域"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_12dp" />
+
+
+            <ImageView
+                android:id="@+id/jiantou2"
+                android:layout_width="@dimen/size_10dp"
+                android:layout_height="@dimen/size_10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size_3dp"
+                android:src="@drawable/icon_down" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/size_1px"
+            android:layout_height="match_parent"
+            android:background="@color/fengexianxi" />
+
+        <LinearLayout
+            android:id="@+id/youhui_liebiao_paixu"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/youhui_liebiao_paixu_tv"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="默认排序"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_12dp" />
+
+
+            <ImageView
+                android:id="@+id/jiantou3"
+                android:layout_width="@dimen/size_10dp"
+                android:layout_height="@dimen/size_10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size_3dp"
+                android:src="@drawable/icon_down" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/size_1px"
+            android:layout_height="match_parent"
+            android:background="@color/fengexianxi" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.example.administrator.artisan.utils.MyListView
+        android:id="@+id/youhui_liebiao_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

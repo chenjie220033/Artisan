@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.artisan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/home_18jiang"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- <activity android:name=".WelcomeActivity"> -->
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name=".MainActivity" /> -->
+        <activity android:name=".robshop.DetailsActivity" />
+        <activity android:name=".zhifu.ZhiFu2Activity" />
+        <activity android:name=".zhifu.ZhiFuActivity" />
+        <activity android:name=".mys.shop.MyShop" />
+        <activity android:name=".Attentions.AddAttentionActivity" />
+        <activity android:name=".mys.MyQiangGouActivity" />
+        <activity android:name=".mys.mydc.MyDingCanActivity" />
+        <activity android:name=".mys.mydz.MyDingZuoActivity" />
+        <activity android:name=".mys.mydz.MyDingZuoXQActivity" />
+        <activity android:name=".mys.myjiudian.MyJiuDianFuKuanActivity" />
+        <activity android:name=".mys.myjiudian.MyJiuDianYuYueActivity" />
+        <activity android:name=".mys.wdjf.MyIntegralActivity" />
+        <activity android:name=".mys.myye.MyYuEActivity" />
+        <activity android:name=".nongjiale.NongJiaLeActivity" />
+        <activity android:name=".nongjiale.JiangHuActivity" />
+        <activity android:name=".mys.qmjjr.QuanMinJJRActivity" />
+        <activity android:name=".mys.mydz.diancai.MyDingZuoDianCaiActivity" />
+        <activity android:name=".mys.mydz.diancai.ShopCarActivity" />
+        <activity android:name=".shop.ShopingSouSuoActivity" />
+        <activity android:name=".mys.myyhxx.MyZhangHuXXActivity" />
+        <activity android:name=".mys.mydc.DingWeiYiXiaoFeiActivity" />
+        <activity android:name=".mys.myjifensc.MyJiFenSCActivity" />
+        <activity android:name=".mys.mydz.MyZaiXianDingZuoActivity" />
+        <activity android:name=".mys.myyhxx.MyJiBenSheZhiActivity" />
+        <activity android:name=".mys.myyhxx.MyXiuGaiNCActivity" />
+        <activity android:name=".mys.myyhxx.MySHDZActivity" />
+        <activity android:name=".mys.myyhxx.MyXGTXActivity" />
+        <activity android:name=".mys.myyhxx.MyXGMMActivity" />
+        <activity android:name=".mores.tieba.TieBaActivity" />
+        <activity android:name=".mores.tieba.FaTieZiActivity" />
+        <activity android:name=".mys.wodohuodong.MyHongDongActivity" />
+        <activity android:name=".mys.wdjf.wojf.MyJiFenActivity" />
+        <activity android:name=".mys.myyouhuoquan.MyYHQActivity" />
+        <activity android:name=".mys.myshenghuo.MyShenghuoActivity" />
+        <activity android:name=".mys.wdxiaoxi.MyXiaoXiActivity" />
+        <activity android:name=".mores.tieba.shangjiafuwu.SJFWActivity" />
+        <activity android:name=".mores.tieba.huodong.HuoDongActivity" />
+        <activity android:name=".mores.tieba.gouwu.GouWuActivity" />
+        <activity android:name=".mores.tieba.jiudian.JiuDianActivity" />
+        <activity android:name=".mores.tieba.jiazheng.JiaZhengActivity" />
+        <activity android:name=".Homes.dingzuo.HomeDingZuoActivity" />
+        <activity android:name=".Homes.dingzuo.HomeDingZuoXQActivity" />
+        <activity android:name=".Homes.dingzuo.HomeYouHuiXQActivity" />
+        <activity android:name=".mores.tieba.gouwu.GouWuXiangQingActivity" />
+        <activity android:name=".mores.tieba.gouwu.HomeShangPinActivity" />
+        <activity android:name=".mores.tieba.gouwu.GouWuCheActivity" />
+        <activity android:name=".mores.tieba.gouwu.GouWuCheZhiFuActivity" />
+        <activity android:name=".mores.tieba.gouwu.HuoDongXiangQingActivity" />
+        <activity android:name=".mores.tieba.gouwu.HuoDongBaoMingActivity" />
+        <activity android:name=".mores.tieba.TieZiXiangQingActivity" />
+        <activity android:name=".Homes.dingzuo.ShangJiaDianPingActivity" />
+        <activity android:name=".Homes.dingzuo.HomeYouHuiLBActivity" />
+        <activity android:name=".mys.wdjf.wojf.MyJiFenXQActivity" />
+        <activity android:name=".mys.wdjf.wojf.JiFenDuiHuanActivity" />
+        <activity android:name=".mys.wdjf.wojf.SuiBian"></activity>
+    </application>
+
+</manifest>

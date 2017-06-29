@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="@dimen/size_5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:src="@drawable/tese1" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10dp"
+                android:text="农家乐"
+                android:textColor="@color/color_nong"
+                android:textSize="@dimen/size_18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:paddingTop="@dimen/size_5dp"
+            android:textColor="@color/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:text="吃喝玩乐有啥有啥"
+            android:textSize="@dimen/size_12dp" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/size_30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_80dp"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tesemg1" />
+    </LinearLayout>
+</LinearLayout>

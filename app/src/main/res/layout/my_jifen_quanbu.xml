@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <LinearLayout
+      android:orientation="vertical"
+      android:padding="@dimen/size_10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <ImageView
+          android:scaleType="fitXY"
+          android:src="@drawable/youhuiquan1"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/size_100dp" />
+      <LinearLayout
+          android:layout_marginTop="@dimen/size_10dp"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/size_40dp">
+          <Button
+              android:background="@color/zhutise"
+              android:text="去使用"
+              android:textSize="@dimen/size_16dp"
+              android:textColor="@color/white"
+              android:layout_width="@dimen/size_0dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent" />
+          <Button
+              android:background="@color/hint"
+              android:text="删除"
+              android:textSize="@dimen/size_16dp"
+              android:textColor="@color/white"
+              android:layout_width="@dimen/size_0dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent" />
+      </LinearLayout>
+  </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/youhuiquan2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_100dp" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/size_10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40dp">
+            <Button
+                android:background="#555555"
+                android:text="用过啦"
+                android:textSize="@dimen/size_16dp"
+                android:textColor="@color/white"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <Button
+                android:background="#999999"
+                android:text="删除"
+                android:textSize="@dimen/size_16dp"
+                android:textColor="@color/white"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+</LinearLayout>

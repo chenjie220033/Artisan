@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gou_wu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.artisan.mores.tieba.gouwu.GouWuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@color/zhutise">
+
+        <ImageView
+            android:id="@+id/my_gouwu_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="购物"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:paddingBottom="@dimen/size_10dp"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_10dp"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/juxing"
+                    android:drawablePadding="@dimen/size_5dp"
+                    android:gravity="center_vertical"
+                    android:text="新品上架"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_16dp" />
+
+                <TextView
+                    android:id="@+id/home_gouwu_gengduo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="更多>>"
+                    android:textColor="@color/hint"
+                    android:textSize="@dimen/size_14dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <com.example.administrator.artisan.utils.MyGridView
+                android:id="@+id/gridView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:gravity="fill"
+                android:horizontalSpacing="@dimen/size_5dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/size_2dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:paddingBottom="@dimen/size_10dp"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_10dp"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/juxing"
+                    android:drawablePadding="@dimen/size_5dp"
+                    android:gravity="center_vertical"
+                    android:text="热门推荐"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_16dp" />
+
+                <TextView
+                    android:id="@+id/home_gouwu_gengduo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="更多>>"
+                    android:textColor="@color/hint"
+                    android:textSize="@dimen/size_14dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <com.example.administrator.artisan.utils.MyGridView
+            android:id="@+id/gridView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:gravity="fill"
+            android:horizontalSpacing="@dimen/size_5dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/size_2dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:paddingBottom="@dimen/size_10dp"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_10dp"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginRight="@dimen/size_5dp"
+                    android:drawableLeft="@drawable/juxing"
+                    android:drawablePadding="@dimen/size_5dp"
+                    android:gravity="center_vertical"
+                    android:text="限时抢购"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_16dp" />
+
+                <com.example.administrator.artisan.Homes.daojishi.CountdownView
+                    android:id="@+id/cv_countdownViewTest1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:isHideTimeBackground="false"
+                    app:isShowDay="false"
+                    app:isShowHour="true"
+                    app:isShowMillisecond="false"
+                    app:isShowMinute="true"
+                    app:isShowSecond="true"
+                    app:isShowTimeBgDivisionLine="false"
+                    app:suffixGravity="center"
+                    app:suffixTextColor="@color/xianshi"
+                    app:suffixTextSize="@dimen/size_20dp"
+                    app:timeBgColor="@color/xianshi"
+                    app:timeTextColor="#FFFFFF"
+                    app:timeTextSize="@dimen/size_12dp" />
+
+                <View
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:text="更多>>"
+                    android:textColor="@color/hint"
+                    android:textSize="@dimen/size_14dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:paddingBottom="@dimen/size_10dp"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_10dp"
+                android:paddingTop="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_5dp"
+                    android:drawableLeft="@drawable/juxing"
+                    android:drawablePadding="@dimen/size_5dp"
+                    android:gravity="center_vertical"
+                    android:text="热门商品"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_16dp" />
+
+                <View
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/home_gouwu_gengduo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:text="更多>>"
+                    android:textColor="@color/hint"
+                    android:textSize="@dimen/size_14dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <com.example.administrator.artisan.utils.MyListView
+                android:id="@+id/gouwu_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

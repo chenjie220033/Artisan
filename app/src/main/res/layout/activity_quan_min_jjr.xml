@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quan_min_jjr"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBai"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.artisan.mys.qmjjr.QuanMinJJRActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@color/zhutise">
+        <ImageView
+            android:id="@+id/my_qmjjr_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="全民经纪人"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_16dp" />
+    </RelativeLayout>
+    <TextView
+        android:text="晋城铭德网络科技有限公司"
+        android:textSize="@dimen/size_18dp"
+        android:gravity="center"
+        android:padding="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/size_250dp"
+        android:layout_height="@dimen/size_250dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/imageView" />
+</LinearLayout>

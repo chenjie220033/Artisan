@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_90dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10dp">
+
+        <ImageView
+            android:layout_width="@dimen/size_90dp"
+            android:layout_height="@dimen/size_70dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/thumb_5624840c310d8" />
+
+        <LinearLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/size_5dp"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/size_5dp">
+
+            <TextView
+                android:textColor="@color/text_colcr"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_0dp"
+                android:layout_weight="1"
+                android:text="aisfhaishfaishfiash"
+                android:textSize="@dimen/size_16dp"
+                android:id="@+id/textView26" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:textColor="@color/text_fu_colcr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_5dp"
+                    android:gravity="center_vertical"
+                    android:text="还但是故事的故事的故事的根深蒂固是德国大使馆的是"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="有效期至："
+                    android:textColor="@color/hint"
+                    android:textSize="@dimen/size_12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="2019-05-31"
+                    android:textColor="@color/hint"
+                    android:textSize="@dimen/size_12dp"
+                    android:id="@+id/textView27" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0dp">
+            <TextView
+                android:text="450人下载"
+                android:textColor="@color/hint"
+                android:textSize="@dimen/size_12dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/youhui_liebiao_ljxz"
+            android:text="立即下载"
+            android:background="@drawable/button_shape"
+            android:textSize="@dimen/size_14dp"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"
+            android:longClickable="true"
+            android:paddingLeft="@dimen/size_10dp"
+            android:paddingRight="@dimen/size_10dp"
+            android:paddingTop="@dimen/size_4dp"
+            android:paddingBottom="@dimen/size_4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+</LinearLayout>

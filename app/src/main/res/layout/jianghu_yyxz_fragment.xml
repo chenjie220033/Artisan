@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBai"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_10dp"
+        android:text="dafasfafasfasf"
+        android:textColor="@color/text_fu_colcr"
+        android:textSize="@dimen/size_14dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15dp"
+        android:background="@color/fengexiancu" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40dp"
+        android:padding="@dimen/size_10dp">
+
+        <View
+            android:layout_width="@dimen/size_5dp"
+            android:layout_height="match_parent"
+            android:background="@color/zhutise" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="其他农家"
+            android:textColor="@color/text_fu_colcr"
+            android:textSize="@dimen/size_16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi" />
+</LinearLayout>

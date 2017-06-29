@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.artisan.mys.wdjf.wojf.MyJiFenXQActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@color/zhutise">
+
+        <ImageView
+            android:id="@+id/my_jifen_xiangqing_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="积分详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_180dp">
+
+                <ImageView
+                    android:id="@+id/home_gouwu_shangpintupian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gouwu_meidi" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:id="@+id/jifenxiangqing_beijingse"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/heise" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/size_10dp"
+                        android:text="花生油5L"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_16dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/size_10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="需要积分："
+                            android:textColor="@color/hint"
+                            android:textSize="@dimen/size_14dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textColor="@color/zhutise"
+                            android:textSize="@dimen/size_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_10dp"
+                        android:layout_marginLeft="@dimen/size_10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="市场价："
+                            android:textColor="@color/hint"
+                            android:textSize="@dimen/size_12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/size_10dp"
+                            android:text="80"
+                            android:textColor="@color/hint"
+                            android:textSize="@dimen/size_12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="数量："
+                            android:textColor="@color/hint"
+                            android:textSize="@dimen/size_12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="63"
+                            android:textColor="@color/hint"
+                            android:textSize="@dimen/size_12dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/jifen_btn_lijiduihuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/size_10dp"
+                    android:background="@drawable/button_shape"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:text="立即兑换"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_14dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_15dp"
+                android:background="@color/fengexiancu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_10dp"
+                android:text="积分详情"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_16dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="@dimen/size_10dp"
+                android:text="广发萨嘎撒个点撒个大神给敢打敢发誓过大概反倒是功夫大师各方大神给但是给对方是个"
+                android:textColor="@color/text_fu_colcr"
+                android:textSize="@dimen/size_12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_15dp"
+                android:background="@color/fengexiancu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_10dp"
+                android:text="同类积分"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi" />
+
+            <com.example.administrator.artisan.utils.MyGridView
+                android:id="@+id/jifen_xiangqing_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:gravity="fill"
+                android:horizontalSpacing="@dimen/size_5dp"
+                android:numColumns="2"
+                android:scrollbars="none"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

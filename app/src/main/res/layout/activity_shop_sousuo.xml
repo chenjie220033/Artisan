@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBai"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/my_shop_sousuo_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="搜索"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_16dp" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:background="@drawable/textview_bk"
+            android:layout_height="@dimen/size_40dp">
+            <TextView
+                android:paddingRight="@dimen/size_5dp"
+                android:paddingLeft="@dimen/size_5dp"
+                android:textColor="@color/text_colcr"
+                android:id="@+id/shop_sousuo_shangjia"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_40dp"
+                android:gravity="center"
+                android:text="商家"
+                android:textSize="@dimen/size_14dp" />
+            <ImageView
+                android:src="@drawable/icon_down"
+                android:padding="@dimen/size_5dp"
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_40dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/size_2dp"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:inputType="none"
+            android:id="@+id/editText2"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/size_40dp"
+            android:textColor="@color/text_colcr"
+            android:textColorHint="@color/hint"
+            android:layout_gravity="center_vertical"
+            android:layout_toStartOf="@+id/atten_sousuo"
+            android:background="@drawable/textview_bk"
+            android:drawableLeft="@drawable/ic_search_hui_24dp"
+            android:drawablePadding="@dimen/size_5dp"
+            android:hint="输入您要搜索的内容"
+            android:paddingLeft="@dimen/size_10dp"
+            android:singleLine="true"
+            android:textSize="@dimen/size_14dp" />
+
+        <TextView
+            android:id="@+id/atten_sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/size_15dp"
+            android:layout_marginRight="@dimen/size_15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_zhijiao"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_15dp"
+            android:paddingRight="@dimen/size_15dp"
+            android:text="搜索"
+            android:textSize="@dimen/size_14dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ea1010</color>
+    <color name="colorPrimaryDark">#ea1010</color>
+    <color name="colorAccent">#ea1010</color>
+    <color name="colorBai">#ffffff</color>
+    <!-- 灰度值(grayscale) -->
+    <color name="white">#ffffff</color>
+    <color name="gray_light">#EDE8E8</color>
+    <color name="gray_dark">#737373</color>
+    <color name="black">#404245</color>
+    <color name="heise">#272727</color>
+    <color name="zhutise">#ea1010</color>
+    <color name="light_black">#fd383838</color>
+    <color name="hs0">#f41414</color>
+    <color name="my_wdjf_titles">#f8ff2b</color>
+    <color name="my_wdjf_title1">#ff9c00</color>
+    <color name="my_wdcz_titles">#ff1626</color>
+    <color name="xianshi">#ff6600</color>
+    <color name="colorView">#DCDCDC</color><!--淡灰色 -->
+    <!--分割线  #dddddd细-->
+    <color name="fengexianxi">#cccccc</color><!--暗灰色 -->
+    <!--分割线  粗-->
+    <color name="fengexiancu">#f5f5f5</color>
+    <color name="tuichu">#e74c3c</color>
+    <color name="gray1">#e7e4e4</color>
+    <color name="deep_gray">#afaeae</color>
+    <color name="deep_gray_2">#636262</color>
+    <color name="text_colcr">#333333</color>
+    <color name="text_fu_colcr">#555555</color>
+    <color name="hint">#999999</color>
+    <color name="radiogroup_bk">#f0f0f0</color>
+    <color name="color_nong">#8fc31f</color>
+    <color name="color_ding">#fccb33</color>
+    <color name="color_ding2">#ff5594</color>
+    <color name="color_shang">#f47709</color>
+    <color name="color_yi">#a6da36</color>
+</resources>

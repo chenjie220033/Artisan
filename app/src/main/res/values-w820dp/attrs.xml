@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--ScrollView-->
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+
+    <!--checkbox-->
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer"/>
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="color_tick" format="color"/>
+        <attr name="color_checked" format="color"/>
+        <attr name="color_unchecked" format="color"/>
+        <attr name="color_unchecked_stroke" format="color"/>
+    </declare-styleable>
+
+    <!--进度条-->
+    <declare-styleable name="FlowView">
+        <attr name="flow_nums" format="integer" />
+        <attr name="done_nums" format="integer" />
+        <attr name="is_has_start_end_line" format="boolean" />
+        <attr name="line_height" format="dimension"/>
+        <attr name="circle_raidus" format="dimension"/>
+        <attr name="todo_color" format="color"/>
+        <attr name="done_color" format="color"/>
+        <attr name="circle_padding" format="dimension"/>
+        <attr name="text_size" format="dimension" />
+        <attr name="text_padding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CountdownView">
+        <attr name="isHideTimeBackground" format="boolean"/>
+        <attr name="isShowTimeBgDivisionLine" format="boolean"/>
+        <attr name="timeBgDivisionLineColor" format="color"/>
+        <attr name="timeBgDivisionLineSize" format="dimension"/>
+        <attr name="timeBgColor" format="color"/>
+        <attr name="timeBgSize" format="dimension"/>
+        <attr name="timeBgRadius" format="dimension"/>
+
+        <attr name="isTimeTextBold" format="boolean"/>
+        <attr name="timeTextSize" format="dimension"/>
+        <attr name="timeTextColor" format="color"/>
+        <attr name="isShowDay" format="boolean"/>
+        <attr name="isShowHour" format="boolean"/>
+        <attr name="isShowMinute" format="boolean"/>
+        <attr name="isShowSecond" format="boolean"/>
+        <attr name="isShowMillisecond" format="boolean"/>
+
+        <attr name="isSuffixTextBold" format="boolean"/>
+        <attr name="suffixTextSize" format="dimension"/>
+        <attr name="suffixTextColor" format="color"/>
+        <attr name="suffix" format="string"/>
+        <attr name="suffixDay" format="string"/>
+        <attr name="suffixHour" format="string"/>
+        <attr name="suffixMinute" format="string"/>
+        <attr name="suffixSecond" format="string"/>
+        <attr name="suffixMillisecond" format="string"/>
+        <attr name="suffixGravity">
+            <enum name="top" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+        <attr name="suffixLRMargin" format="dimension"/>
+        <attr name="suffixDayLeftMargin" format="dimension"/>
+        <attr name="suffixDayRightMargin" format="dimension"/>
+        <attr name="suffixHourLeftMargin" format="dimension"/>
+        <attr name="suffixHourRightMargin" format="dimension"/>
+        <attr name="suffixMinuteLeftMargin" format="dimension"/>
+        <attr name="suffixMinuteRightMargin" format="dimension"/>
+        <attr name="suffixSecondLeftMargin" format="dimension"/>
+        <attr name="suffixSecondRightMargin" format="dimension"/>
+        <attr name="suffixMillisecondLeftMargin" format="dimension"/>
+
+
+        <!--dragtop-->
+        <!--Set the collapse panel offset-->
+        <attr name="dtlCollapseOffset" format="dimension"/>
+
+        <!--Set enable drag over.The default value is true.-->
+        <attr name="dtlOverDrag" format="boolean"/>
+
+        <!--Open the top view after the drag layout is created. The default value is false.-->
+        <attr name="dtlOpen" format="boolean"/>
+
+        <!-- The id of the top view (which will be dragged) -->
+        <attr name="dtlTopView" format="reference"/>
+
+        <!-- The content view which will be dragged together with "dtlTopView" -->
+        <attr name="dtlDragContentView" format="reference"/>
+
+        <!-- True the top view can be dragged -->
+        <attr name="dtlCaptureTop" format="boolean"/>
+
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorBai"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/toolbar_image"
+            android:layout_width="@dimen/size_24dp"
+            android:layout_height="@dimen/size_24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:src="@drawable/ico_7" />
+       <LinearLayout
+           android:id="@+id/toolbar_city"
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/toolbar_city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="晋城"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_16dp" />
+           <ImageView
+               android:layout_gravity="center_vertical"
+               android:src="@drawable/ic_expand_more_black_24dp"
+               android:layout_width="@dimen/size_25dp"
+               android:layout_height="@dimen/size_25dp" />
+       </LinearLayout>
+        <EditText
+            android:cursorVisible="false"
+            android:singleLine="true"
+            android:textSize="@dimen/size_12dp"
+            android:drawableLeft="@drawable/ic_search_white_24dp"
+            android:id="@+id/toolbar_editText"
+            android:layout_width="wrap_content"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:background="@drawable/red_editview"
+            android:hint="@string/toolbar_text"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/toolbar_qd_text"
+            android:layout_toRightOf="@+id/toolbar_city"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_margin="@dimen/size_8dp" />
+
+        <TextView
+            android:id="@+id/toolbar_qd_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/size_10dp"
+            android:gravity="center"
+            android:textSize="@dimen/size_16dp"
+            android:paddingRight="@dimen/size_10dp"
+            android:text="@string/toolbar_qiandao"
+            android:textColor="@color/colorBai"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/toolbar_image" />
+
+    </RelativeLayout>
+</LinearLayout>

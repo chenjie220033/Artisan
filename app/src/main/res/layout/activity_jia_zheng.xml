@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_jia_zheng"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.artisan.mores.tieba.jiazheng.JiaZhengActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/my_mores_jiazhengfuwu_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="家政服务"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_16dp" />
+    </RelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="@dimen/size_0dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="20%w"
+        app:layout_widthPercent="100%w">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:src="@drawable/hk_baojie"
+                app:layout_heightPercent="25%w"
+                app:layout_widthPercent="50%w" />
+
+            <LinearLayout
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="家庭保洁"
+                    android:textColor="@color/text_colcr"
+                    android:textSize="@dimen/size_16dp" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:textColor="@color/text_fu_colcr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="最专业的小时工"
+                    android:textSize="@dimen/size_12dp" />
+
+            </LinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+        <View
+            android:background="@color/fengexianxi"
+            android:layout_width="@dimen/size_1px"
+            android:layout_height="match_parent"/>
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:src="@drawable/hk_xiyi"
+                app:layout_heightPercent="25%w"
+                app:layout_widthPercent="50%w" />
+
+            <LinearLayout
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="洗衣洗鞋"
+                    android:textColor="@color/text_colcr"
+                    android:textSize="@dimen/size_16dp" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="满26元免费送"
+                    android:textColor="@color/text_fu_colcr"
+                    android:textSize="@dimen/size_12dp" />
+
+            </LinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <View
+        android:background="@color/fengexianxi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"/>
+    <View
+        android:background="@color/fengexiancu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15dp"/>
+    <View
+        android:background="@color/fengexianxi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"/>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="@dimen/size_0dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="25%w"
+        app:layout_widthPercent="100%w">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/size_10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="擦玻璃"
+                android:layout_below="@+id/hk_caboli"
+                android:gravity="center"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:src="@drawable/hk_caboli"
+                app:layout_marginPercent="5%w"
+                app:layout_heightPercent="30%w"
+                app:layout_widthPercent="50%w"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:id="@+id/hk_caboli"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+        <View
+            android:background="@color/fengexianxi"
+            android:layout_width="@dimen/size_1px"
+            android:layout_height="match_parent"/>
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/size_10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="油烟机清洗"
+                android:layout_below="@+id/hk_youyanji"
+                android:gravity="center"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:src="@drawable/hk_youyanji"
+                app:layout_marginPercent="5%w"
+                app:layout_heightPercent="30%w"
+                app:layout_widthPercent="50%w"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:id="@+id/hk_youyanji"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+        <View
+            android:background="@color/fengexianxi"
+            android:layout_width="@dimen/size_1px"
+            android:layout_height="match_parent"/>
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/size_10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="厨房保养"
+                android:layout_below="@+id/hk_chufang"
+                android:gravity="center"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:src="@drawable/hk_chufang"
+                app:layout_marginPercent="5%w"
+                app:layout_heightPercent="30%w"
+                app:layout_widthPercent="50%w"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:id="@+id/hk_chufang"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <View
+        android:background="@color/fengexianxi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"/>
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="25%w"
+        app:layout_widthPercent="100%w">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/size_10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="新居开荒"
+                android:layout_below="@+id/hk_xinju"
+                android:gravity="center"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:src="@drawable/hk_xinju"
+                app:layout_marginPercent="5%w"
+                app:layout_heightPercent="30%w"
+                app:layout_widthPercent="50%w"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:id="@+id/hk_xinju"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+        <View
+            android:background="@color/fengexianxi"
+            android:layout_width="@dimen/size_1px"
+            android:layout_height="match_parent"/>
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/size_10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="地板打蜡"
+                android:layout_below="@+id/hk_diban"
+                android:gravity="center"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:src="@drawable/hk_diban"
+                app:layout_marginPercent="5%w"
+                app:layout_heightPercent="30%w"
+                app:layout_widthPercent="50%w"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:id="@+id/hk_diban"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+        <View
+            android:background="@color/fengexianxi"
+            android:layout_width="@dimen/size_1px"
+            android:layout_height="match_parent"/>
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/size_10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="更多服务"
+                android:layout_below="@+id/hk_more"
+                android:gravity="center"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:src="@drawable/hk_more"
+                app:layout_marginPercent="5%w"
+                app:layout_heightPercent="30%w"
+                app:layout_widthPercent="50%w"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:id="@+id/hk_more"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <View
+        android:background="@color/fengexianxi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"/>
+</com.zhy.android.percent.support.PercentLinearLayout>

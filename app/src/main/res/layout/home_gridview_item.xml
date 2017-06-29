@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/home_gridview_tupian"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shangjiafuwu" />
+
+        <TextView
+            android:id="@+id/home_gridview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:padding="@dimen/size_5dp"
+            android:text="景江大酒店"
+            android:textColor="@color/text_colcr"
+            android:textSize="@dimen/size_14dp" />
+
+    <TextView
+        android:id="@+id/home_gridview_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:padding="@dimen/size_5dp"
+        android:text="婚礼，鲜花，主持"
+        android:textColor="@color/hint"
+        android:textSize="@dimen/size_12dp" />
+    <View
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginBottom="@dimen/size_5dp"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_marginRight="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_5dp">
+
+            <TextView
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="140人关注"
+                android:textColor="@color/xianshi"
+                android:textSize="@dimen/size_14dp" />
+
+            <TextView
+                android:id="@+id/home_gridview_yishou"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已售44"
+                android:textColor="@color/hint"
+                android:textSize="@dimen/size_14dp" />
+        </LinearLayout>
+</LinearLayout>

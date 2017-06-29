@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorBai"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/qianggou_daifu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="点击这里"
+        android:textColor="#545614"
+        android:textSize="@dimen/size_20dp"
+        android:gravity="center"/>
+</LinearLayout>

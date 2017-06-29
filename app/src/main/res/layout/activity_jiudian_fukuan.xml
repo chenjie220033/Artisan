@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorBai"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/my_jiudianfukuan_fh"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:id="@+id/toolbar_city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="@string/jiudianfukuan"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_18sp" />
+    </RelativeLayout>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@color/gray_light"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:button="@null"
+                android:background="@color/gray_light"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <RadioButton
+                android:textColor="@drawable/button_textcolor"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/my_jiudian_daodian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:button="@null"
+                android:background="@drawable/buttondianji"
+                android:gravity="center"
+                android:text="到店付" />
+
+            <RadioButton
+                android:layout_marginTop="12dp"
+                android:textColor="@drawable/button_textcolor"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/my_jiudian_zaixian"
+                android:layout_width="0dp"
+                android:background="@drawable/buttondianji"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:button="@null"
+                android:gravity="center"
+                android:text="在线支付" />
+        </RadioGroup>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBai"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/my_dingzuoxq_fh"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:id="@+id/toolbar_city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="@string/dingdanxiangqing"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/fengexiancu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/my_dingzuo_xq_qx"
+            android:text="取消订单"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:paddingRight="@dimen/size_20dp"
+            android:paddingLeft="@dimen/size_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size_10dp"
+            android:background="@drawable/button_shape" />
+
+        <Button
+            android:id="@+id/my_dingzuo_xq_zf"
+            android:text="  去支付  "
+            android:paddingLeft="@dimen/size_20dp"
+            android:paddingRight="@dimen/size_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_shape"
+            android:layout_margin="@dimen/size_10dp"
+            android:layout_alignBaseline="@+id/my_dingzuo_xq_qx"
+            android:layout_alignBottom="@+id/my_dingzuo_xq_qx"
+            android:layout_toStartOf="@+id/my_dingzuo_xq_qx" />
+    </RelativeLayout>
+</RelativeLayout>

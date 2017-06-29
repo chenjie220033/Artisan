@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_dish_item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/right_dish_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="蔡明"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/size_14dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="left">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="¥"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ff0006"
+                android:textSize="@dimen/size_12dp"/>
+            <TextView
+                android:id="@+id/right_dish_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_2dp"
+                android:text="10.0"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ff0006"
+                android:textSize="@dimen/size_14dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="right|center_vertical">
+            <ImageView
+                android:id="@+id/right_dish_remove"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:src="@drawable/gwc_jian" />
+            <TextView
+                android:id="@+id/right_dish_account"
+                android:layout_width="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="@dimen/size_16dp"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/right_dish_add"
+                android:layout_width="22dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_vertical"
+                android:layout_height="22dp"
+                android:clickable="true"
+                android:src="@drawable/gwc_jia" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

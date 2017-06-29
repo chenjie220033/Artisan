@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:paddingLeft="@dimen/size_10dp"
+    android:paddingRight="@dimen/size_10dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_45dp">
+    <com.example.administrator.artisan.zhifu.SmoothCheckBox
+        android:id="@+id/shouhuo_dizhi_box"
+        android:layout_width="@dimen/size_20dp"
+        android:layout_height="@dimen/size_20dp"
+        android:layout_gravity="center"
+        app:color_checked="@color/zhutise"
+        app:color_unchecked_stroke="@color/zhutise" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:text="测试者"
+        android:singleLine="true"
+        android:textColor="@color/text_colcr"
+        android:textSize="@dimen/size_12dp"
+        android:layout_marginLeft="@dimen/size_15dp"
+        android:layout_width="@dimen/size_60dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:gravity="center_vertical"
+        android:text="测试者泽州路上奥数发"
+        android:singleLine="true"
+        android:textColor="@color/text_colcr"
+        android:textSize="@dimen/size_12dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/size_15dp"
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:text="11111111111"
+        android:maxLength="11"
+        android:numeric="integer"
+        android:textColor="@color/text_colcr"
+        android:textSize="@dimen/size_12dp"
+        android:layout_marginLeft="@dimen/size_15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/shouhuo_dizhi_xgdz"
+        android:gravity="center_vertical"
+        android:text="修改地址"
+        android:textColor="@color/zhutise"
+        android:textSize="@dimen/size_12dp"
+        android:layout_marginLeft="@dimen/size_15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorBai"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40dp"
+        android:padding="@dimen/size_10dp">
+
+        <View
+            android:layout_width="@dimen/size_5dp"
+            android:layout_height="match_parent"
+            android:background="@color/zhutise" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="特色服务"
+            android:textColor="@color/text_fu_colcr"
+            android:textSize="@dimen/size_16dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+<LinearLayout
+    android:paddingLeft="@dimen/size_10dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="@dimen/size_40dp">
+    <ImageView
+        android:padding="@dimen/size_10dp"
+        android:src="@drawable/servlco1"
+        android:layout_width="@dimen/size_40dp"
+        android:layout_height="@dimen/size_40dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="提供免费WIFI"
+        android:textSize="@dimen/size_14dp"
+        android:textColor="@color/hint"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/size_40dp" />
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <LinearLayout
+        android:paddingLeft="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/size_40dp">
+        <ImageView
+            android:padding="@dimen/size_10dp"
+            android:src="@drawable/servlco2"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="有停车场"
+            android:textColor="@color/hint"
+            android:textSize="@dimen/size_14dp"
+            android:gravity="center_vertical"
+            android:layout_height="@dimen/size_40dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15dp"
+        android:background="@color/fengexiancu"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40dp"
+        android:padding="@dimen/size_10dp">
+
+        <View
+            android:layout_width="@dimen/size_5dp"
+            android:layout_height="match_parent"
+            android:background="@color/zhutise" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_5dp"
+            android:text="套餐详情"
+            android:textColor="@color/text_fu_colcr"
+            android:textSize="@dimen/size_16dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+
+</LinearLayout>

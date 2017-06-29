@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_140dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_90dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_10dp">
+
+            <ImageView
+                android:layout_width="@dimen/size_90dp"
+                android:layout_height="@dimen/size_70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/thumb_5624840c310d8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="帕兰朵酒店"
+                    android:textColor="@color/text_colcr"
+                    android:textSize="@dimen/size_16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="地址："
+                        android:textColor="@color/hint"
+                        android:textSize="@dimen/size_12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="泽州路01111号"
+                        android:textColor="@color/hint"
+                        android:textSize="@dimen/size_12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_0dp"
+                    android:layout_weight="1.5"
+                    android:paddingTop="@dimen/size_5dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/wenzikuang"
+                        android:text="大厅"
+                        android:textSize="@dimen/size_14dp"
+                        android:textColor="@color/zhutise" />
+
+                    <View
+                        android:layout_width="@dimen/size_10dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:textSize="@dimen/size_14dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/wenzikuang"
+                        android:text="已点菜"
+                        android:textColor="@color/zhutise" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1px"
+            android:background="@color/fengexianxi" />
+        <LinearLayout
+            android:padding="@dimen/size_10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:background="@drawable/button_shape"
+                android:layout_weight="1"
+                android:text="查看"
+                android:textSize="@dimen/size_14dp"
+                android:textColor="@color/white"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_width="@dimen/size_10dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:background="@drawable/button_shape"
+                android:layout_weight="1"
+                android:text="去付款"
+                android:textSize="@dimen/size_14dp"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_marginRight="@dimen/size_20dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+</LinearLayout>

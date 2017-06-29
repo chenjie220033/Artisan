@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorBai"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40dp">
+        <TextView
+            android:textColor="@color/text_colcr"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/size_14dp"
+            android:gravity="center_vertical"
+            android:text="充值卡密"
+            android:layout_height="match_parent" />
+        <EditText
+            android:textColor="@color/text_colcr"
+            android:hint="请输入充值卡密"
+            android:textColorHint="@color/hint"
+            android:gravity="right|center"
+            android:maxLength="5"
+            android:textSize="@dimen/size_14dp"
+            android:numeric="integer"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/fengexianxi"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_70dp">
+
+        <Button
+            android:id="@+id/my_daijinquan_ljcz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/size_30dp"
+            android:background="@drawable/button_shape"
+            android:text="立即充值"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_18dp" />
+    </RelativeLayout>
+</LinearLayout>

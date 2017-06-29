@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_hong_dong"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.artisan.mys.wodohuodong.MyHongDongActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/my_huodong_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:padding="@dimen/size_6dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的活动"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/my_wdhd_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_60dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/gray_light"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <View
+            android:layout_width="@dimen/size_0dp"
+            android:longClickable="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:textColor="@drawable/button_textcolor"
+            android:layout_marginTop="@dimen/size_12dp"
+            android:checked="true"
+            android:layout_marginBottom="@dimen/size_12dp"
+            android:id="@+id/my_wdhd_wfbd"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textSize="@dimen/size_14dp"
+            android:background="@drawable/buttondianji"
+            android:gravity="center"
+            android:text="我发布的" />
+
+        <RadioButton
+            android:layout_marginTop="@dimen/size_12dp"
+            android:textColor="@drawable/button_textcolor"
+            android:layout_marginBottom="@dimen/size_12dp"
+            android:id="@+id/my_wdhd_wcjd"
+            android:layout_width="@dimen/size_0dp"
+            android:background="@drawable/buttondianji"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我参加的" />
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/my_wdhd_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
