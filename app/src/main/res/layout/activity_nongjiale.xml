@@ -306,36 +306,34 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:padding="@dimen/size_10dp"
-        android:layout_height="@dimen/size_180dp">
+        android:layout_height="@dimen/size_200dp">
         <LinearLayout
             android:layout_weight="0.4"
             android:orientation="vertical"
             android:layout_width="@dimen/size_0dp"
             android:layout_height="match_parent">
             <LinearLayout
-                android:layout_weight="1"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/size_0dp">
+                android:layout_height="@dimen/size_30dp">
               <ImageView
                   android:src="@drawable/nongjiale_1"
-                  android:layout_gravity="center_vertical"
                   android:layout_width="@dimen/size_25dp"
+                  android:layout_gravity="center_vertical"
                   android:layout_marginRight="@dimen/size_10dp"
                   android:layout_height="@dimen/size_25dp" />
                 <TextView
                     android:text="景区"
-                    android:textColor="@color/nongjiale_jingqu"
                     android:gravity="center_vertical"
+                    android:textColor="@color/nongjiale_jingqu"
                     android:textSize="@dimen/size_16dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
             <LinearLayout
-                android:layout_weight="1"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/size_0dp">
+                android:layout_height="@dimen/size_30dp">
             <TextView
                 android:gravity="center_vertical"
                 android:text="最佳季节最好去处"
@@ -346,6 +344,7 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_weight="3"
+                android:padding="@dimen/size_10dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size_0dp">
@@ -356,10 +355,80 @@
                     android:layout_height="match_parent" />
             </LinearLayout>
         </LinearLayout>
+        <View
+            android:layout_width="@dimen/size_1px"
+            android:layout_height="match_parent"
+            android:background="@color/fengexianxi"/>
         <LinearLayout
             android:layout_weight="0.6"
+            android:orientation="vertical"
             android:layout_width="@dimen/size_0dp"
-            android:layout_height="match_parent"></LinearLayout>
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="0.4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0dp">
+               <LinearLayout
+                   android:paddingLeft="@dimen/size_10dp"
+                   android:layout_weight="1"
+                   android:orientation="vertical"
+                   android:layout_width="@dimen/size_0dp"
+                   android:layout_height="match_parent">
+                   <LinearLayout
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="@dimen/size_30dp">
+                       <ImageView
+                           android:src="@drawable/nongjiale_2"
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="@dimen/size_25dp"
+                           android:layout_marginRight="@dimen/size_10dp"
+                           android:layout_height="@dimen/size_25dp" />
+                       <TextView
+                           android:text="旅游套餐"
+                           android:textColor="@color/nongjiale_lvyou"
+                           android:gravity="center_vertical"
+                           android:textSize="@dimen/size_16dp"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+                   </LinearLayout>
+                   <LinearLayout
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="@dimen/size_30dp">
+                       <TextView
+                           android:gravity="center_vertical"
+                           android:text="省心省事必选"
+                           android:textColor="@color/text_fu_colcr"
+                           android:textSize="@dimen/size_12dp"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+                   </LinearLayout>
+               </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:padding="@dimen/size_10dp"
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="match_parent">
+                       <ImageView
+                           android:src="@drawable/nongjiale_tupian2"
+                           android:scaleType="fitXY"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/fengexianxi"/>
+            <LinearLayout
+                android:layout_weight="0.6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0dp">
+                
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </com.zhy.android.percent.support.PercentLinearLayout>
