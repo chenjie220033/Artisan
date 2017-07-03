@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -290,10 +291,10 @@
                 android:layout_height="@dimen/size_1px"
                 android:background="@color/fengexianxi" />
 
-            <include
-                layout="@layout/shoping_frame_item"
+            <com.example.administrator.artisan.utils.MyListView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:id="@+id/qianggou_listview"
+                android:layout_height="wrap_content"/>
         </com.zhy.android.percent.support.PercentLinearLayout>
     </ScrollView>
 </com.zhy.android.percent.support.PercentLinearLayout>

@@ -29,7 +29,6 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:paddingLeft="@dimen/size_5dp"
             android:text="家政服务"
             android:textColor="@color/colorBai"
             android:textSize="@dimen/size_16dp" />
@@ -43,7 +42,9 @@
         app:layout_widthPercent="100%w">
 
         <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/jiazheng_baojie"
             android:layout_width="@dimen/size_0dp"
+            android:background="@drawable/relativelayout_selector"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
@@ -64,6 +65,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/jiazheng_baojie_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -88,8 +90,10 @@
             android:layout_height="match_parent"/>
         <com.zhy.android.percent.support.PercentLinearLayout
             android:layout_width="@dimen/size_0dp"
+            android:id="@+id/jiazheng_xiyixixie"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="@drawable/relativelayout_selector"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -108,6 +112,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/jiazheng_xiyixixie_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -144,107 +149,108 @@
         android:layout_width="@dimen/size_0dp"
         android:layout_height="@dimen/size_0dp"
         android:orientation="horizontal"
-        app:layout_heightPercent="25%w"
+        app:layout_heightPercent="20%w"
         app:layout_widthPercent="100%w">
 
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/jiazheng_caboli"
+            android:background="@drawable/relativelayout_selector"
             android:layout_width="@dimen/size_0dp"
             android:layout_weight="1"
             android:layout_gravity="center"
             android:orientation="vertical"
-            android:paddingTop="@dimen/size_10dp"
-            android:layout_height="wrap_content">
-
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/hk_caboli"
+                app:layout_marginPercent="10%h"
+                app:layout_heightPercent="50%h"
+                app:layout_widthPercent="50%h"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
             <TextView
+                android:id="@+id/jiazheng_caboli_text"
                 android:text="擦玻璃"
-                android:layout_below="@+id/hk_caboli"
                 android:gravity="center"
                 android:textColor="@color/text_colcr"
                 android:textSize="@dimen/size_14dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_alignParentStart="true" />
 
-            <ImageView
-                android:src="@drawable/hk_caboli"
-                app:layout_marginPercent="5%w"
-                app:layout_heightPercent="30%w"
-                app:layout_widthPercent="50%w"
-                android:layout_width="@dimen/size_0dp"
-                android:layout_height="@dimen/size_0dp"
-                android:id="@+id/hk_caboli"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
-
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
         <View
             android:background="@color/fengexianxi"
             android:layout_width="@dimen/size_1px"
             android:layout_height="match_parent"/>
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/jiazheng_youyanji"
+            android:background="@drawable/relativelayout_selector"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:paddingTop="@dimen/size_10dp"
-            android:layout_height="wrap_content">
-
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/hk_youyanji"
+                app:layout_marginPercent="10%h"
+                app:layout_heightPercent="50%h"
+                app:layout_widthPercent="50%h"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
             <TextView
+                android:id="@+id/jiazheng_youyanji_text"
                 android:text="油烟机清洗"
-                android:layout_below="@+id/hk_youyanji"
                 android:gravity="center"
                 android:textColor="@color/text_colcr"
                 android:textSize="@dimen/size_14dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_alignParentStart="true" />
 
-            <ImageView
-                android:src="@drawable/hk_youyanji"
-                app:layout_marginPercent="5%w"
-                app:layout_heightPercent="30%w"
-                app:layout_widthPercent="50%w"
-                android:layout_width="@dimen/size_0dp"
-                android:layout_height="@dimen/size_0dp"
-                android:id="@+id/hk_youyanji"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
         <View
             android:background="@color/fengexianxi"
             android:layout_width="@dimen/size_1px"
             android:layout_height="match_parent"/>
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.zhy.android.percent.support.PercentLinearLayout
             android:layout_width="@dimen/size_0dp"
+            android:background="@drawable/relativelayout_selector"
+            android:id="@+id/jiazheng_chufang"
             android:layout_weight="1"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:paddingTop="@dimen/size_10dp"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
+
+
+            <ImageView
+                android:src="@drawable/hk_chufang"
+                app:layout_marginPercent="10%h"
+                app:layout_heightPercent="50%h"
+                app:layout_widthPercent="50%h"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
             <TextView
                 android:text="厨房保养"
-                android:layout_below="@+id/hk_chufang"
+                android:id="@+id/jiazheng_chufang_text"
                 android:gravity="center"
                 android:textColor="@color/text_colcr"
                 android:textSize="@dimen/size_14dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_alignParentStart="true" />
-
-            <ImageView
-                android:src="@drawable/hk_chufang"
-                app:layout_marginPercent="5%w"
-                app:layout_heightPercent="30%w"
-                app:layout_widthPercent="50%w"
-                android:layout_width="@dimen/size_0dp"
-                android:layout_height="@dimen/size_0dp"
-                android:id="@+id/hk_chufang"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
-
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
     </com.zhy.android.percent.support.PercentLinearLayout>
     <View
         android:background="@color/fengexianxi"
@@ -256,107 +262,106 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_heightPercent="25%w"
+        app:layout_heightPercent="20%w"
         app:layout_widthPercent="100%w">
 
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.zhy.android.percent.support.PercentLinearLayout
             android:layout_width="@dimen/size_0dp"
             android:layout_weight="1"
+            android:background="@drawable/relativelayout_selector"
             android:layout_gravity="center"
+            android:id="@+id/jiazheng_xinju"
             android:orientation="vertical"
-            android:paddingTop="@dimen/size_10dp"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:text="新居开荒"
-                android:layout_below="@+id/hk_xinju"
-                android:gravity="center"
-                android:textColor="@color/text_colcr"
-                android:textSize="@dimen/size_14dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true" />
+            android:layout_height="match_parent">
 
             <ImageView
                 android:src="@drawable/hk_xinju"
-                app:layout_marginPercent="5%w"
-                app:layout_heightPercent="30%w"
-                app:layout_widthPercent="50%w"
+                app:layout_marginPercent="10%h"
+                app:layout_heightPercent="50%h"
+                app:layout_widthPercent="50%h"
                 android:layout_width="@dimen/size_0dp"
                 android:layout_height="@dimen/size_0dp"
-                android:id="@+id/hk_xinju"
+                android:layout_gravity="center_horizontal"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true" />
-
-        </com.zhy.android.percent.support.PercentRelativeLayout>
-        <View
-            android:background="@color/fengexianxi"
-            android:layout_width="@dimen/size_1px"
-            android:layout_height="match_parent"/>
-        <com.zhy.android.percent.support.PercentRelativeLayout
-            android:layout_width="@dimen/size_0dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            android:paddingTop="@dimen/size_10dp"
-            android:layout_height="wrap_content">
-
             <TextView
-                android:text="地板打蜡"
-                android:layout_below="@+id/hk_diban"
+                android:text="新居开荒"
+                android:id="@+id/jiazheng_xinju_text"
                 android:gravity="center"
                 android:textColor="@color/text_colcr"
                 android:textSize="@dimen/size_14dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_alignParentStart="true" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+        <View
+            android:background="@color/fengexianxi"
+            android:layout_width="@dimen/size_1px"
+            android:layout_height="match_parent"/>
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="@dimen/size_0dp"
+            android:id="@+id/jiazheng_dala"
+            android:background="@drawable/relativelayout_selector"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
 
             <ImageView
                 android:src="@drawable/hk_diban"
-                app:layout_marginPercent="5%w"
-                app:layout_heightPercent="30%w"
-                app:layout_widthPercent="50%w"
+                app:layout_marginPercent="10%h"
+                app:layout_heightPercent="50%h"
+                app:layout_widthPercent="50%h"
+                android:layout_gravity="center_horizontal"
                 android:layout_width="@dimen/size_0dp"
                 android:layout_height="@dimen/size_0dp"
-                android:id="@+id/hk_diban"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true" />
+            <TextView
+                android:text="地板打蜡"
+                android:gravity="center"
+                android:id="@+id/jiazheng_dala_text"
+                android:textColor="@color/text_colcr"
+                android:textSize="@dimen/size_14dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true" />
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
         <View
             android:background="@color/fengexianxi"
             android:layout_width="@dimen/size_1px"
             android:layout_height="match_parent"/>
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/jiazheng_gengduo"
             android:layout_width="@dimen/size_0dp"
             android:layout_weight="1"
+            android:background="@drawable/relativelayout_selector"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:paddingTop="@dimen/size_10dp"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
+            <ImageView
+                android:src="@drawable/hk_more"
+                app:layout_marginPercent="10%h"
+                app:layout_heightPercent="50%h"
+                app:layout_widthPercent="50%h"
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
             <TextView
                 android:text="更多服务"
-                android:layout_below="@+id/hk_more"
                 android:gravity="center"
                 android:textColor="@color/text_colcr"
                 android:textSize="@dimen/size_14dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_alignParentStart="true" />
 
-            <ImageView
-                android:src="@drawable/hk_more"
-                app:layout_marginPercent="5%w"
-                app:layout_heightPercent="30%w"
-                app:layout_widthPercent="50%w"
-                android:layout_width="@dimen/size_0dp"
-                android:layout_height="@dimen/size_0dp"
-                android:id="@+id/hk_more"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
     </com.zhy.android.percent.support.PercentLinearLayout>
     <View
         android:background="@color/fengexianxi"

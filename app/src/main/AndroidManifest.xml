@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.artisan">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -75,7 +76,15 @@
         <activity android:name=".Homes.dingzuo.HomeYouHuiLBActivity" />
         <activity android:name=".mys.wdjf.wojf.MyJiFenXQActivity" />
         <activity android:name=".mys.wdjf.wojf.JiFenDuiHuanActivity" />
-        <activity android:name=".mys.wdjf.wojf.SuiBian"></activity>
+        <activity android:name=".mys.wdjf.wojf.SuiBian" />
+        <activity android:name=".mores.tieba.shangjiafuwu.ShangJiaXinXiActivity" />
+        <activity android:name=".shop.QiangGouXiangQingActivity" />
+        <activity android:name=".mores.tieba.jiazheng.YuYueFuWuActivity" />
+        <activity android:name=".mores.tieba.jiazheng.QuanBuFuWuActivity" />
+        <activity android:name=".mores.tieba.shangjiafuwu.ShangJiaFWDPActivity" />
+        <activity android:name=".mores.tieba.jiudian.JiuDianXiangQingActivity" />
+        <activity android:name=".mores.tieba.jiudian.JiuDianJieShaoActivity" />
+        <activity android:name=".mores.tieba.jiudian.JiuDianDingDanActivity"></activity>
     </application>
 
 </manifest>

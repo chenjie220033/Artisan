@@ -19,18 +19,16 @@
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/size_5dp"
             android:layout_weight="1"
-            android:weightSum="4"
             android:orientation="vertical"
             android:paddingLeft="@dimen/size_5dp">
 
             <TextView
                 android:textColor="@color/text_colcr"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/size_0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:text="aisfhaishfaishfiash"
                 android:textSize="@dimen/size_16dp"
-                android:id="@+id/textView26" />
+                android:id="@+id/youhui_liebiao_title" />
 
             <LinearLayout
                 android:layout_width="match_parent"

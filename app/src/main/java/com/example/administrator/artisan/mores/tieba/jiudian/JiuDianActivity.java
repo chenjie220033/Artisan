@@ -1,12 +1,17 @@
 package com.example.administrator.artisan.mores.tieba.jiudian;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -16,9 +21,12 @@ import android.widget.PopupWindow;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import com.example.administrator.artisan.R;
+import com.example.administrator.artisan.mores.tieba.shangjiafuwu.ShangjiaXXPingJiaFragment;
+import com.example.administrator.artisan.shop.ShopingSouSuoActivity;
 import com.zhy.android.percent.support.PercentLinearLayout;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,8 +39,6 @@ import butterknife.Unbinder;
 public class JiuDianActivity extends AppCompatActivity {
     @BindView(R.id.mores_jiudian_fh)
     ImageView moresJiudianFh;
-    @BindView(R.id.mores_jiudian_edit)
-    EditText moresJiudianEdit;
     @BindView(R.id.supplier_list_title_tv)
     TextView supplierListTitleTv;
     @BindView(R.id.supplier_list_cart_iv)
@@ -82,6 +88,8 @@ public class JiuDianActivity extends AppCompatActivity {
     String titles4 = "排序";
     private Unbinder bind;
 
+    @BindView(R.id.jiudian_listview)
+    ListView listview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,12 +100,72 @@ public class JiuDianActivity extends AppCompatActivity {
         }
         initData();
         initPopMenu();
+        initView();
         jiudianFenleiTv.setText(titles1);
         jiudianDiquTv.setText(titles2);
         jiudianShangquanTv.setText(titles3);
         jiudianPaixuTv.setText(titles4);
     }
 
+    private void initView() {
+        List list  = new ArrayList();
+        for (int i = 0; i < 15; i++) {
+            list.add("江湖客栈");
+        }
+        JiuDianAdapter jiuDianAdapter= new JiuDianAdapter(this,list);
+        listview.setAdapter(jiuDianAdapter);
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getApplicationContext(), JiuDianXiangQingActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+    private class JiuDianAdapter extends BaseAdapter{
+        private List list = new ArrayList();
+        private Context context;
+        public JiuDianAdapter(Activity activity, List list) {
+            this.list = list;
+            this.context = activity;
+        }
+
+        @Override
+        public int getCount() {
+            return list.size();
+        }
+
+        @Override
+        public Object getItem(int i) {
+            return list.get(i);
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return i;
+
+        }
+
+        @Override
+        public View getView(int i, View view, ViewGroup viewGroup) {
+            ViewHoder viewHoder = null;
+            if (view==null){
+                viewHoder = new ViewHoder();
+                view = LayoutInflater.from(context).inflate(R.layout.jiudian_item,null);
+                viewHoder.tv1 = (TextView) view.findViewById(R.id.jiudian_titles);
+
+                view.setTag(viewHoder);
+            }else {
+                viewHoder = (ViewHoder) view.getTag();
+            }
+            viewHoder.tv1.setText(list.get(i).toString());
+
+            return view;
+        }
+        private class ViewHoder{
+            TextView tv1;
+        }
+    }
     @Override
     protected void onDestroy() {
         if (this.bind != null) {
@@ -218,9 +286,13 @@ public class JiuDianActivity extends AppCompatActivity {
         });
     }
 
-    @OnClick({R.id.mores_jiudian_fh, R.id.jiudian_fenlei, R.id.jiudian_diqu, R.id.jiudian_shangquan, R.id.jiudian_paixu})
+    @OnClick({R.id.mores_jiudian_edit,R.id.mores_jiudian_fh, R.id.jiudian_fenlei, R.id.jiudian_diqu, R.id.jiudian_shangquan, R.id.jiudian_paixu})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.mores_jiudian_edit:
+                Intent intent = new Intent(this, ShopingSouSuoActivity.class);
+                startActivity(intent);
+                break;
             case R.id.mores_jiudian_fh:
                 finish();
                 break;

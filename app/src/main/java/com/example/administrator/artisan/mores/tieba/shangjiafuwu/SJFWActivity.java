@@ -1,12 +1,18 @@
 package com.example.administrator.artisan.mores.tieba.shangjiafuwu;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -15,18 +21,21 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.administrator.artisan.R;
 import com.zhy.android.percent.support.PercentLinearLayout;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
+
 /**
  * Created by chen on 2017/6/22.
  * 商家服务
@@ -88,6 +97,9 @@ public class SJFWActivity extends AppCompatActivity {
     String titles3 = "商圈";
     String titles4 = "排序";
     private Unbinder bind;
+    @BindView(R.id.shangjia_fuwu_listview)
+    ListView myListView;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +115,82 @@ public class SJFWActivity extends AppCompatActivity {
         shangjiaDiquTv.setText(titles2);
         shangjiaShangquanTv.setText(titles3);
         shangjiaPaixuTv.setText(titles4);
+        initView();
+    }
+
+    private void initView() {
+        List list = new ArrayList();
+        for (int i = 1; i < 11; i++) {
+            list.add("江湖客栈");
+        }
+        final SJFWAdapter sjfwadapter = new SJFWAdapter(this, list);
+        myListView.setAdapter(sjfwadapter);
+        myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(SJFWActivity.this, sjfwadapter.getItem(i) + "", Toast.LENGTH_SHORT).show();
+                intent = new Intent(SJFWActivity.this, ShangJiaXinXiActivity.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+    private class SJFWAdapter extends BaseAdapter {
+        private Context context;
+        private List list = new ArrayList();
+
+        public SJFWAdapter(Activity activity, List list) {
+            this.context = activity;
+            this.list = list;
+        }
+
+        @Override
+        public int getCount() {
+            return list.size();
+        }
+
+        @Override
+        public Object getItem(int i) {
+            return list.get(i);
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return i;
+        }
+
+        @Override
+        public View getView(int i, View view, ViewGroup viewGroup) {
+            ViewHorder viewHorder = null;
+            if (view == null) {
+                viewHorder = new ViewHorder();
+                view = LayoutInflater.from(context).inflate(R.layout.more_sjfw_item, null);
+                viewHorder.tv = (TextView) view.findViewById(R.id.more_sjfw_title);
+                viewHorder.iv = (ImageView) view.findViewById(R.id.more_sjfw_dadianhua);
+                view.setTag(viewHorder);
+            } else {
+                viewHorder = (ViewHorder) view.getTag();
+            }
+            viewHorder.tv.setText(list.get(i).toString());
+            viewHorder.iv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //跳转到用户界面较为温和，推荐使用！
+//                    Intent intent = new Intent(Intent.ACTION_DIAL,
+//                            Uri.parse("tel:"+tests.get(position).getPhone_lost()));
+                    intent = new Intent(Intent.ACTION_DIAL,
+                            Uri.parse("tel:" + "15834332131"));
+                    context.startActivity(intent);
+                }
+            });
+            return view;
+        }
+
+        class ViewHorder {
+            TextView tv;
+            ImageView iv;
+        }
     }
 
     @Override
@@ -115,8 +203,8 @@ public class SJFWActivity extends AppCompatActivity {
 
     private void initData() {
         mMenuData1 = new ArrayList<>();
-        String[] menuStr1 = new String[]{"全部", "旅游","房地产","美食", "休闲娱乐", "酒店", "购物",
-                "生活服务", "丽人", "水果",  "电影/在线选座"};
+        String[] menuStr1 = new String[]{"全部", "旅游", "房地产", "美食", "休闲娱乐", "酒店", "购物",
+                "生活服务", "丽人", "水果", "电影/在线选座"};
         Map<String, String> map1;
         for (int i = 0, len = menuStr1.length; i < len; ++i) {
             map1 = new HashMap<>();
@@ -226,7 +314,7 @@ public class SJFWActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.shangjia_fenlei, R.id.shangjia_diqu, R.id.shangjia_shangquan,
-            R.id.shangjia_paixu,R.id.mores_sjfw_fh})
+            R.id.shangjia_paixu, R.id.mores_sjfw_fh})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.mores_sjfw_fh:
@@ -262,4 +350,6 @@ public class SJFWActivity extends AppCompatActivity {
                 break;
         }
     }
+
+
 }

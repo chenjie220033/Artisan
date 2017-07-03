@@ -153,6 +153,7 @@
                     android:layout_margin="@dimen/size_5dp"
                     android:textColor="@color/text_colcr"
                     android:textSize="@dimen/size_14dp"
+                    android:cursorVisible="false"
                     android:textColorHint="@color/hint"
                     android:gravity="center"
                     android:textAllCaps="false"

@@ -32,8 +32,8 @@ public class ZhiFuActivity extends Activity {
     @BindView(R.id.text_zongjin)
     TextView text_zongjin;
     private int int_shuliang = 1;
-    private int int_danjia ;
-    private int int_youhui ;
+    private int int_danjia;
+    private int int_youhui;
     private Unbinder bind;
 
     @Override
@@ -42,18 +42,18 @@ public class ZhiFuActivity extends Activity {
         setContentView(R.layout.zhifu_activity);
         bind = ButterKnife.bind(this);
         initView();
-        text_zongjia.setText((int_danjia*int_shuliang)-int_youhui+"");
-        text_zongjin.setText((int_danjia*int_shuliang)-int_youhui+"");
+        text_zongjia.setText((int_danjia * int_shuliang) - int_youhui + "");
+        text_zongjin.setText((int_danjia * int_shuliang) - int_youhui + "");
     }
 
     private void initView() {
-        if (text_danjia!=null){
+        if (text_danjia != null) {
             String dan = text_danjia.getText().toString();
             if (dan != null && dan.length() > 0) {
                 int_danjia = Integer.parseInt(dan);
             }
         }
-        if (text_youhui!=null){
+        if (text_youhui != null) {
             String you = text_youhui.getText().toString();
             if (you != null && you.length() > 0) {
                 int_youhui = Integer.parseInt(you);
@@ -63,9 +63,9 @@ public class ZhiFuActivity extends Activity {
     }
 
 
-    @OnClick({R.id.yunsuan_jia, R.id.yunsuan_jian, R.id.button3,R.id.zhifu_fh})
+    @OnClick({R.id.yunsuan_jia, R.id.yunsuan_jian, R.id.button3, R.id.zhifu_fh})
     public void onViewClicked(View view) {
-        if (text_shuliang!=null){
+        if (text_shuliang != null) {
             String shu = text_shuliang.getText().toString();
             if (shu != null && shu.length() > 0) {
                 int_shuliang = Integer.parseInt(shu);
@@ -73,14 +73,14 @@ public class ZhiFuActivity extends Activity {
         }
         switch (view.getId()) {
             case R.id.yunsuan_jia:
-                text_shuliang.setText(int_shuliang +1 + "");
+                text_shuliang.setText(int_shuliang + 1 + "");
                 int_shuliang++;
                 break;
             case R.id.yunsuan_jian:
-                        if (int_shuliang>1){
-                            text_shuliang.setText(int_shuliang - 1 + "");
-                          int_shuliang--;
-                        }
+                if (int_shuliang > 1) {
+                    text_shuliang.setText(int_shuliang - 1 + "");
+                    int_shuliang--;
+                }
                 break;
             case R.id.button3:
                 String zongjia = text_zongjia.getText().toString();
@@ -90,21 +90,21 @@ public class ZhiFuActivity extends Activity {
                 Intent intent = new Intent(this, ZhiFu2Activity.class);
                 intent.putExtra("leixing", leixing);
                 intent.putExtra("danjia", danjia);
-                intent.putExtra("zongjia",zongjia);
-                intent.putExtra("shuliang",shuliang);
+                intent.putExtra("zongjia", zongjia);
+                intent.putExtra("shuliang", shuliang);
                 startActivity(intent);
                 break;
             case R.id.zhifu_fh:
                 finish();
                 break;
         }
-        text_zongjia.setText((int_danjia*int_shuliang)-int_youhui+"");
-        text_zongjin.setText((int_danjia*int_shuliang)-int_youhui+"");
+        text_zongjia.setText((int_danjia * int_shuliang) - int_youhui + "");
+        text_zongjin.setText((int_danjia * int_shuliang) - int_youhui + "");
     }
 
     @Override
     protected void onDestroy() {
-        if (this.bind!=null){
+        if (this.bind != null) {
             this.bind.unbind();
         }
         super.onDestroy();

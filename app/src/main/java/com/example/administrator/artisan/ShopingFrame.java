@@ -1,17 +1,21 @@
 package com.example.administrator.artisan;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.AdapterView;
+import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -20,12 +24,16 @@ import android.widget.PopupWindow;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
+import com.example.administrator.artisan.mores.tieba.shangjiafuwu.ShangjiaXXPingJiaFragment;
+import com.example.administrator.artisan.shop.QiangGouXiangQingActivity;
 import com.example.administrator.artisan.shop.ShopingSouSuoActivity;
 import com.example.administrator.artisan.utils.ActivityUtils;
+import com.example.administrator.artisan.utils.MyListView;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import butterknife.BindView;
@@ -87,7 +95,8 @@ public class ShopingFrame extends Fragment {
 
     private ActivityUtils activityUtils;
     private Unbinder bind;
-
+    @BindView(R.id.qianggou_listview)
+    MyListView listView;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -102,9 +111,70 @@ public class ShopingFrame extends Fragment {
         mCategoryTv.setText(titles3);
         supplier_list_activity_tvjl.setText(titles4);
         setOnClicks();
+        initView();
         return view;
     }
 
+    private void initView() {
+        List list = new ArrayList();
+        for (int i = 0; i <11 ; i++) {
+            list.add("剩余10000份");
+        }
+        ShopingAdapter shopingAdapter = new ShopingAdapter(getActivity(),list);
+        listView.setAdapter(shopingAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(),QiangGouXiangQingActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+    private class ShopingAdapter extends BaseAdapter{
+        private List list = new ArrayList();
+        private Context context;
+        public ShopingAdapter(Activity activity, List list) {
+            this.list = list;
+            this.context = activity;
+        }
+
+        @Override
+        public int getCount() {
+            return list.size();
+        }
+
+        @Override
+        public Object getItem(int i) {
+            return list.get(i);
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return i;
+
+        }
+
+        @Override
+        public View getView(int i, View view, ViewGroup viewGroup) {
+            ViewHoder viewHoder = null;
+            if (view==null){
+                viewHoder = new ViewHoder();
+                view = LayoutInflater.from(context).inflate(R.layout.shoping_frame_item,null);
+                viewHoder.tv1 = (TextView) view.findViewById(R.id.shoping_item_qiang);
+                view.setTag(viewHoder);
+            }else {
+                viewHoder = (ViewHoder) view.getTag();
+            }
+            if (i==1||i==3||i==5||i==7){
+                viewHoder.tv1.setBackgroundResource(R.drawable.qianggou2);
+            }
+            viewHoder.tv1.setText(list.get(i).toString());
+            return view;
+        }
+        private class ViewHoder{
+            TextView tv1;
+        }
+    }
     @Override
     public void onDestroy() {
         if (this.bind!=null){
@@ -284,5 +354,6 @@ public class ShopingFrame extends Fragment {
     public static ShopingFrame newInstance() {
         return new ShopingFrame();
     }
+
 
 }
