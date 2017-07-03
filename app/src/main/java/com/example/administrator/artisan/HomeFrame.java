@@ -61,6 +61,7 @@ public class HomeFrame extends Fragment {
     @BindView(R.id.home_gridview)
     MyGridView myGridView;
     private ActivityUtils activityUtils;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -99,12 +100,10 @@ public class HomeFrame extends Fragment {
         idRecyclerviewHorizontal.setLayoutManager(linearLayoutManager);
         //设置适配器
         GalleryAdapter1 mAdapter = new GalleryAdapter1(getActivity(), mDatas1);
-        mAdapter.setOnItemClickLitener(new GalleryAdapter1.OnItemClickLitener()
-        {
+        mAdapter.setOnItemClickLitener(new GalleryAdapter1.OnItemClickLitener() {
             @Override
-            public void onItemClick(View view, int position)
-            {
-                Toast.makeText(getActivity(), position+"", Toast.LENGTH_SHORT)
+            public void onItemClick(View view, int position) {
+                Toast.makeText(getActivity(), position + "", Toast.LENGTH_SHORT)
                         .show();
             }
         });
@@ -120,12 +119,10 @@ public class HomeFrame extends Fragment {
         idRecyclerviewHorizontal2.setLayoutManager(linearLayoutManager2);
         //设置适配器
         GalleryAdapter2 mAdapter2 = new GalleryAdapter2(getActivity(), mDatas2);
-        mAdapter.setOnItemClickLitener(new GalleryAdapter1.OnItemClickLitener()
-        {
+        mAdapter.setOnItemClickLitener(new GalleryAdapter1.OnItemClickLitener() {
             @Override
-            public void onItemClick(View view, int position)
-            {
-                Toast.makeText(getActivity(), position+"", Toast.LENGTH_SHORT)
+            public void onItemClick(View view, int position) {
+                Toast.makeText(getActivity(), position + "", Toast.LENGTH_SHORT)
                         .show();
             }
         });

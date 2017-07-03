@@ -250,6 +250,18 @@
         layout="@layout/home_dingzuo_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1px"
+            android:background="@color/fengexianxi" />
+    <include
+        layout="@layout/home_dingzuo_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1px"
+            android:background="@color/fengexianxi" />
     <include
         layout="@layout/home_dingzuo_item"
         android:layout_width="match_parent"
@@ -258,22 +270,34 @@
         layout="@layout/home_dingzuo_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1px"
+            android:background="@color/fengexianxi" />
     <include
         layout="@layout/home_dingzuo_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1px"
+            android:background="@color/fengexianxi" />
     <include
         layout="@layout/home_dingzuo_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1px"
+            android:background="@color/fengexianxi" />
     <include
         layout="@layout/home_dingzuo_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <include
-        layout="@layout/home_dingzuo_item"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1px"
+            android:background="@color/fengexianxi" />
 
     </com.zhy.android.percent.support.PercentLinearLayout>
     </ScrollView>

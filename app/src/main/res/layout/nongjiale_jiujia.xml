@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_ljyy"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/size_35dp"
             android:layout_alignParentEnd="true"
@@ -169,7 +169,7 @@
                 android:paddingRight="@dimen/size_5dp"
                 android:text="泽州路"
                 android:textColor="@color/text_fu_colcr"
-                android:textSize="@dimen/size_16dp" />
+                android:textSize="@dimen/size_14dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -212,7 +212,7 @@
             android:gravity="center"
             android:text="0356-2222254"
             android:textColor="@color/text_fu_colcr"
-            android:textSize="@dimen/size_16dp" />
+            android:textSize="@dimen/size_14dp" />
     </LinearLayout>
 
     <View
@@ -244,11 +244,11 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/size_1px"
         android:background="@color/fengexianxi" />
-    <!--<ListView-->
-    <!--android:id="@+id/list_shangjiatuangou"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content">-->
-    <!--</ListView>-->
+    <com.example.administrator.artisan.utils.MyListView
+    android:id="@+id/list_shangjiatuangou"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    </com.example.administrator.artisan.utils.MyListView>
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/size_1px"
@@ -329,20 +329,4 @@
         android:id="@+id/nongjiale_jiujia_fraament"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-    <!--<android.support.design.widget.TabLayout-->
-    <!--android:id="@+id/id_nongjialelayout"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:paddingLeft="2dp"-->
-    <!--app:tabIndicatorColor="#ea1010"-->
-    <!--app:tabIndicatorHeight="4dp"-->
-    <!--app:tabMode="fixed"-->
-    <!--app:tabSelectedTextColor="#ea1010"-->
-    <!--app:tabTextAppearance="@android:style/TextAppearance.Holo.Small" />-->
-
-    <!--<android.support.v4.view.ViewPager-->
-    <!--android:scrollbars="none"-->
-    <!--android:id="@+id/id_nongjialeviewpager"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content" />-->
 </LinearLayout>

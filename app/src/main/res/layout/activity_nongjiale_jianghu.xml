@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:background="@color/colorBai"
@@ -20,7 +19,6 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:paddingLeft="@dimen/size_5dp"
             android:text="江湖酒家"
             android:textColor="@color/colorBai"
             android:textSize="@dimen/size_16dp" />
@@ -48,9 +46,29 @@
             android:layout_alignParentTop="true"
             android:layout_toStartOf="@+id/nongjiale_jj_fenxiang" />
     </RelativeLayout>
-    <com.example.administrator.artisan.robshop.PullToZoomScrollViewEx
-        android:id="@+id/scroll_views"
+    <ScrollView
         android:scrollbars="none"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/home_banner"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_200dp" />
+    <include
+        layout="@layout/nongjiale_jiujia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--<com.example.administrator.artisan.robshop.PullToZoomScrollViewEx-->
+        <!--android:id="@+id/scroll_views"-->
+        <!--android:scrollbars="none"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

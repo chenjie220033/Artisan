@@ -4,8 +4,9 @@
     android:background="@color/colorBai"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<View
+<com.example.administrator.artisan.utils.MyListView
     android:layout_width="match_parent"
-    android:layout_height="@dimen/size_20dp"
-    android:background="#235423"/>
+    android:scrollbars="none"
+    android:id="@+id/jianghu_pingjia_listview"
+    android:layout_height="wrap_content"/>
 </LinearLayout>

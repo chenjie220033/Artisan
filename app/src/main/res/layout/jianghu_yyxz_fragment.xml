@@ -53,4 +53,9 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/size_1px"
         android:background="@color/fengexianxi" />
+    <com.example.administrator.artisan.utils.MyListView
+        android:scrollbars="none"
+        android:id="@+id/jianghu_yyxz_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

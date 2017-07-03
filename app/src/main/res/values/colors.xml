@@ -38,4 +38,6 @@
     <color name="jiudian_dingdan">#f8f0d9</color>
     <color name="nongjiale_jingqu">#bdde8a</color>
     <color name="nongjiale_lvyou">#ff9c9c</color>
+    <color name="nongjiale_shanghu">#ff955b</color>
+    <color name="nongjiale_gonglue">#b1a3dd</color>
 </resources>

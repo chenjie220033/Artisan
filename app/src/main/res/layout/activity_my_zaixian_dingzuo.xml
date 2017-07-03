@@ -195,7 +195,6 @@
             android:paddingLeft="@dimen/size_10dp">
 
             <EditText
-
                 android:layout_width="@dimen/size_0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

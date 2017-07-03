@@ -31,18 +31,16 @@
                 android:layout_height="@dimen/size_0dp"
                 android:layout_weight="1"
                 android:text="锦江大酒店"
-                android:textSize="@dimen/size_16dp" />
+                android:textSize="@dimen/size_14dp" />
 
-            <com.example.administrator.artisan.robshop.RatingBarView
-                android:id="@+id/starView"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                bao:starCount="5"
-                bao:starEmpty="@drawable/ic_star_empty"
-                bao:starFill="@drawable/ic_star_fill"
-                bao:starImageSize="@dimen/size_15dp" />
+        <TextView
+            android:textSize="@dimen/size_12dp"
+            android:textColor="@color/hint"
+            android:text="吃喝玩乐一条龙"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -54,10 +52,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="人均：¥"
+                    android:text="起步价：¥"
                     android:textColor="@color/hint"
-                    android:textSize="@dimen/size_12dp"
-                    android:id="@+id/textView5" />
+                    android:textSize="@dimen/size_12dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -65,8 +62,47 @@
                     android:gravity="center"
                     android:text="888"
                     android:textColor="@color/zhutise"
-                    android:textSize="@dimen/size_14dp" />
+                    android:textSize="@dimen/size_12dp" />
             </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="已售："
+                android:textColor="@color/hint"
+                android:textSize="@dimen/size_12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/zhutise"
+                android:textSize="@dimen/size_12dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="1"
+                    android:layout_marginLeft="@dimen/size_15dp"
+                    android:textColor="@color/zhutise"
+                    android:textSize="@dimen/size_12dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="评价"
+                    android:layout_marginLeft="@dimen/size_5dp"
+                    android:textColor="@color/hint"
+                    android:textSize="@dimen/size_12dp" />
+        </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -75,23 +111,15 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
 
-           <TextView
-               android:text="10人评价"
-               android:textColor="@color/hint"
-               android:textSize="@dimen/size_14dp"
-               android:gravity="center"
-               android:layout_width="wrap_content"
-               android:layout_height="@dimen/size_0dp"
-               android:layout_weight="1"/>
             <TextView
                 android:id="@+id/text_juli"
-                android:paddingTop="@dimen/size_10dp"
                 android:text="2.6km"
+                android:gravity="center"
                 android:textColor="@color/zhutise"
                 android:textSize="@dimen/size_12dp"
-                android:layout_gravity="center"
+                android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
 
         </LinearLayout>
     </LinearLayout>
